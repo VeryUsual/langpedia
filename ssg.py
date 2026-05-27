@@ -3,15 +3,16 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 import minify_html
 import re
+import os
 
 content_dir = Path("content/")
 output_dir = Path("output/")
 
 parser = argparse.ArgumentParser()
-parser.add_argument("action", help="Action you would like to perform. Supported actions: build.")
+parser.add_argument("action", help="Action you would like to perform. Supported actions: build, run.")
 args = parser.parse_args()
 
-if args.action == "build":
+if args.action == "build" or args.action == "run":
     for file in content_dir.iterdir():
         template = ""
         with open("template.html", "r") as f:
@@ -25,9 +26,9 @@ if args.action == "build":
         root = tree.getroot()
 
         for elem in root.iter():
-            print(elem.tag)
-            print(elem.text.strip())
-            print(elem.attrib)
+            #print(elem.tag)
+            #print(elem.text.strip())
+            #print(elem.attrib)
 
             if elem.tag == "title":
                 out += "<title>" + elem.text.strip() + " - Langpedia</title>"
@@ -36,10 +37,29 @@ if args.action == "build":
                     sidebar += "<a href='#" + i.lower().strip().replace("\\sp\\", "").replace("\\br\\", "") + "'>" + i + "</a>"
             elif elem.tag == "p":
                 out += "<p>" + elem.text.strip() + "</p>"
+            elif elem.tag == "h1":
+                if "name" in elem.attrib:
+                    out += "<h1 id=\"" + elem.attrib["name"] + "\">" + elem.text.strip() + "</h1>"
+                else:
+                    out += "<h1>" + elem.text.strip() + "</h1>"
+            elif elem.tag == "h2":
+                if "name" in elem.attrib:
+                    out += "<h2 id=\"" + elem.attrib["name"] + "\">" + elem.text.strip() + "</h2>"
+                else:
+                    out += "<h2>" + elem.text.strip() + "</h2>"
+            elif elem.tag == "br":
+                out += "<br>"
+            elif elem.tag == "link":
+                out += "<a href=\"" + elem.attrib["where"] + "\">" + elem.text.strip() + "</a>"
+
+
 
         out = out.replace("\\br\\", "<br>").replace("\\sp\\", "&nbsp;")
         sidebar = sidebar.replace("\\br\\", "<br>").replace("\\sp\\", "&nbsp;")
 
         content = file.read_text(encoding="utf-8", errors="ignore")
         output_file = output_dir / (file.name.replace(".lp.xml", ".html"))
-        output_file.write_text(minify_html.minify(template.replace("{{content}}", out).replace("{{sidebar}}", sidebar), minify_js=True, minify_css=True).replace("\u00A0", "&nbsp;"), encoding="utf-8")
+        output_file.write_text(template.replace("{{content}}", out).replace("{{sidebar}}", sidebar), encoding="utf-8")
+
+    if args.action == "run":
+        os.system("python -m http.server -d output")

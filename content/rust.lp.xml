@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lpml>
+    <title>Rust</title>
+    <tableofcontents>
+        History\br\
+        Syntax\br\
+        Features\br\
+        Adoption\br\
+    </tableofcontents>
+    <h1>Rust</h1>
+    <p>Rust is a general-purpose programming language which emphasizes performance, type safety, concurrency, and memory safety.</p>
+    <h2 name="history">History</h2>
+</lpml>
