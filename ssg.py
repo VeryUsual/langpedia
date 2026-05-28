@@ -64,7 +64,7 @@ if args.action == "build" or args.action == "run":
                 out += "<a href=\"" + elem.attrib["where"] + "\">" + elem.text.strip() + "</a>"
             elif elem.tag == "cite":
                 if platform.system() == "Windows":
-                    print("Citations are not supported on Windows, continuing without.")
+                    print("Warning: Citations are not supported on Windows, continuing without.")
 
                 try:
                     citation = citationlib.create_citation(
