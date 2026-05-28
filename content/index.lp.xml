@@ -2,14 +2,12 @@
 <lpml>
     <title>Home</title>
     <tableofcontents>
-        List\br\
         \sp\Rust\br\
         \sp\C\br\
         \sp\C++\br\
         \sp\Python\br\
     </tableofcontents>
-    <h1 name="list">List</h1>
-    <h2 name="rust">Rust</h2>
-    <link where="rust.html">Click here to go to the Rust page</link>
-    <h2 name="c">C</h2>
+    <h1>Langpedia</h1>
+    <p>An encyclopedia of programming languages</p>
+    <link where="rust.html">Rust</link>
 </lpml>

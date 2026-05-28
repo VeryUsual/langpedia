@@ -59,6 +59,11 @@ if args.action == "build" or args.action == "run":
                     out += "<h2 id=\"" + elem.attrib["name"] + "\">" + elem.text.strip() + "</h2>"
                 else:
                     out += "<h2>" + elem.text.strip() + "</h2>"
+            elif elem.tag == "h3": 
+                if "name" in elem.attrib:
+                    out += "<h3 id=\"" + elem.attrib["name"] + "\">" + elem.text.strip() + "</h3>"
+                else:
+                    out += "<h3>" + elem.text.strip() + "</h3>"
             elif elem.tag == "br":
                 out += "<br>"
             elif elem.tag == "link":
