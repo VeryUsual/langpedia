@@ -5,6 +5,7 @@ import minify_html
 import re
 import os
 import citationlib
+import platform
 
 content_dir = Path("content/")
 output_dir = Path("output/")
@@ -31,7 +32,16 @@ if args.action == "build" or args.action == "run":
             #print(elem.text.strip())
             #print(elem.attrib)
 
-            if elem.tag == "title":
+            if elem.tag == "rightbox":
+                out += "<div style='float: right;'>"
+                for child in elem:
+                    if child.tag == "img":
+                        out += "<img src=\"" + child.text.strip() + "\">"
+                    elif child.tag == "br":
+                        out += "<br>"
+                out += "</div>"
+                continue
+            elif elem.tag == "title":
                 out += "<title>" + elem.text.strip() + " - Langpedia</title>"
             elif elem.tag == "tableofcontents":
                 for i in elem.text.strip().split("\\br\\"):
@@ -53,12 +63,18 @@ if args.action == "build" or args.action == "run":
             elif elem.tag == "link":
                 out += "<a href=\"" + elem.attrib["where"] + "\">" + elem.text.strip() + "</a>"
             elif elem.tag == "cite":
-                citation = citationlib.create_citation(
-                    elem.text.strip(),
-                    style=citationlib.Style.APA,
-                    output_format=citationlib.Format.HTML
-                )
-                out += "<p>" + citation + "</p>"
+                if platform.system() == "Windows":
+                    print("Citations are not supported on Windows, continuing without.")
+
+                try:
+                    citation = citationlib.create_citation(
+                        elem.text.strip(),
+                        style=citationlib.Style.APA,
+                        output_format=citationlib.Format.HTML
+                    )
+                    out += "<p>" + citation + "</p>"
+                except (ValueError, citationlib.exceptions.CitationError):
+                    out += "<p>" + elem.text.strip() + " (citations not supported on Windows)</p>"
 
 
         out = out.replace("\\br\\", "<br>").replace("\\sp\\", "&nbsp;")
