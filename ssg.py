@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 import minify_html
 import re
 import os
+import citationlib
 
 content_dir = Path("content/")
 output_dir = Path("output/")
@@ -51,7 +52,13 @@ if args.action == "build" or args.action == "run":
                 out += "<br>"
             elif elem.tag == "link":
                 out += "<a href=\"" + elem.attrib["where"] + "\">" + elem.text.strip() + "</a>"
-
+            elif elem.tag == "cite":
+                citation = citationlib.create_citation(
+                    elem.text.strip(),
+                    style=citationlib.Style.APA,
+                    output_format=citationlib.Format.HTML
+                )
+                out += "<p>" + citation + "</p>"
 
 
         out = out.replace("\\br\\", "<br>").replace("\\sp\\", "&nbsp;")
