@@ -39,6 +39,7 @@ jobs:
           git fetch origin gh-pages || true
           git checkout gh-pages || git checkout --orphan gh-pages
           git rm -rf . || true
+          ls
           cp -R output/* .
           touch .nojekyll
           git add .
