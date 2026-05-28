@@ -12,6 +12,7 @@ output_dir = Path("output/")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("action", help="Action you would like to perform. Supported actions: build, run.")
+parser.add_argument("--root_url", nargs="?", const="/", type=str)
 args = parser.parse_args()
 
 if args.action == "build" or args.action == "run":
@@ -82,7 +83,11 @@ if args.action == "build" or args.action == "run":
 
         content = file.read_text(encoding="utf-8", errors="ignore")
         output_file = output_dir / (file.name.replace(".lp.xml", ".html"))
-        output_file.write_text(template.replace("{{content}}", out).replace("{{sidebar}}", sidebar), encoding="utf-8")
+        if args.root_url is None:
+            root_url = "/"
+        else:
+            root_url = args.root_url
+        output_file.write_text((template.replace("{{content}}", out).replace("{{sidebar}}", sidebar)).replace("{{ROOT}}", root_url), encoding="utf-8")
 
     if args.action == "run":
         os.system("python -m http.server -d output")
