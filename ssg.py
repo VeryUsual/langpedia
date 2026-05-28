@@ -72,7 +72,7 @@ if args.action == "build" or args.action == "run":
                         style=citationlib.Style.APA,
                         output_format=citationlib.Format.HTML
                     )
-                    out += "<p>" + citation + "</p>"
+                    out += citation
                 except (ValueError, citationlib.exceptions.CitationError):
                     out += "<p>" + elem.text.strip() + " (citations not supported on Windows)</p>"
 
