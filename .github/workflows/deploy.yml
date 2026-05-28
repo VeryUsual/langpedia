@@ -40,6 +40,7 @@ jobs:
           git checkout gh-pages || git checkout --orphan gh-pages
           git rm -rf . || true
           cp -R output/* .
+          rm -rf output
           touch .nojekyll
           git add .
           git commit -m "Deploy site" || echo "Nothing to commit"
