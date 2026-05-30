@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <lpml>
     <title>Home</title>
     <tableofcontents>
@@ -10,4 +9,6 @@
     <h1>Langpedia</h1>
     <p>An encyclopedia of programming languages</p>
     <link where="rust.html">Rust</link>
+    <br />
+    <link where="c.html">C</link>
 </lpml>

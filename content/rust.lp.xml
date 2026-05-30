@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <lpml>
     <title>Rust</title>
     <tableofcontents>
+        Rust\br\
         History\br\
         References\br\
     </tableofcontents>
@@ -10,7 +10,7 @@
         <br />
         <img>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Cargo_clippy_hello_world_example.png/330px-Cargo_clippy_hello_world_example.png</img>
     </rightbox>
-    <h1>Rust</h1>
+    <h1 name="rust">Rust</h1>
     <p>Rust is a general-purpose programming language which emphasizes performance, type safety, concurrency, and memory safety.</p>
     <p>Rust was influenced by ideas from functional programming, including immutability, higher-order functions, algebraic data types, and pattern matching.</p>
     <p>A software developer named Graydon Hoare created Rust in 2006 while working at Mozilla. Rust 1.0, the first stable release, was published in May 2015.</p>

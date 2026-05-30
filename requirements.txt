@@ -1,2 +1,2 @@
 citationlib
-minify-html
+lxml
