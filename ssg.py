@@ -94,12 +94,18 @@ if args.action == "build" or args.action == "run":
         out = out.replace("\\br\\", "<br>").replace("\\sp\\", "&nbsp;")
         sidebar = sidebar.replace("\\br\\", "<br>").replace("\\sp\\", "&nbsp;")
 
-        content = file.read_text(encoding="utf-8", errors="ignore")
-        output_file = output_dir / (file.name.replace(".lp.xml", ".html"))
         if args.root_url is None:
             root_url = "/"
         else:
             root_url = args.root_url
+        
+        for f in content_dir.iterdir():
+            page = f.name.replace(".lp.xml", "")
+            out = out.replace("\\page:" + page + "\\", "<a href=\"" + root_url + page + ".html\">" + page + "</a>")
+            out = out.replace("\\page:" + page.upper() + "\\", "<a href=\"" + root_url + page + ".html\">" + page.upper() + "</a>")
+
+        content = file.read_text(encoding="utf-8", errors="ignore")
+        output_file = output_dir / (file.name.replace(".lp.xml", ".html"))
         output_file.write_text((template.replace("{{content}}", out).replace("{{sidebar}}", sidebar)).replace("{{ROOT}}", root_url), encoding="utf-8")
 
     if args.action == "run":

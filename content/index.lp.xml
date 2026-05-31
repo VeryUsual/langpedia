@@ -11,4 +11,6 @@
     <link where="rust.html">Rust</link>
     <br />
     <link where="c.html">C</link>
+    <br />
+    <link where="c++.html">C++</link>
 </lpml>

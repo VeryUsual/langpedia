@@ -2,6 +2,7 @@
     <title>C</title>
     <tableofcontents>
         C\br\
+        History\br\
         Example Code\br\
         References\br\
     </tableofcontents>
@@ -18,6 +19,8 @@
     It was initally used to improve the Unix operating system, but then grew to more use cases, and is still used today.
     C is a complied language, meaning source code is directly converted into machine code to be ran.
     </p>
+    <h2 name="history">History</h2>
+    <p>history</p>
     <h2 name="example_code">Example Code</h2>
     <p>Here is an example of a program written in C. It will show "Hello world!" followed by a newline in a terminal.</p>
     <code>
