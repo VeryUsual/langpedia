@@ -13,4 +13,6 @@
     <link where="c.html">C</link>
     <br />
     <link where="c++.html">C++</link>
+    <br />
+    <link where="python.html">Python</link>
 </lpml>
