@@ -20,7 +20,11 @@
     C is a complied language, meaning source code is directly converted into machine code to be ran.
     </p>
     <h2 name="history">History</h2>
-    <p>history</p>
+    <p>
+    In 1972, the language was formally named C, and introduced features like struct, enum, and preprocessor directives.
+    In 1973, the UNIX kernel was rewritten in C.
+    In 1978, Brian Kernighan and Dennis Ritchie published "The C Programming Language", which served as the de-facto standard until ANSI standardization in 1989.
+    </p>
     <h2 name="example_code">Example Code</h2>
     <p>Here is an example of a program written in C. It will show "Hello world!" followed by a newline in a terminal.</p>
     <code>
