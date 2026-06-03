@@ -8,11 +8,13 @@
     </tableofcontents>
     <h1>Langpedia</h1>
     <p>An encyclopedia of programming languages</p>
-    <link where="rust.html">Rust</link>
+    <link where="rust.lp.xml">Rust</link>
     <br />
-    <link where="c.html">C</link>
+    <link where="c.lp.xml">C</link>
     <br />
-    <link where="c++.html">C++</link>
+    <link where="c++.lp.xml">C++</link>
     <br />
-    <link where="python.html">Python</link>
+    <link where="python.lp.xml">Python</link>
+    <br />
+    <link where="go.lp.xml">Go</link>
 </lpml>

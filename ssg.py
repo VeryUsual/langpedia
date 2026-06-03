@@ -74,7 +74,10 @@ if args.action == "build" or args.action == "run":
                 elif elem.tag == "br":
                     out += "<br>"
                 elif elem.tag == "link":
-                    out += "<a href=\"" + elem.attrib["where"] + "\">" + elem.text.strip() + "</a>"
+                    where = elem.attrib["where"]
+                    if where.endswith(".lp.xml"):
+                        where = where.replace(".lp.xml", ".html")
+                    out += "<a href=\"" + where + "\">" + elem.text.strip() + "</a>"
                 elif elem.tag == "cite":
                     if platform.system() == "Windows":
                         print("Warning: Citations are not supported on Windows, continuing without.")
