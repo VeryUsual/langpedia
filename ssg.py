@@ -12,6 +12,7 @@ output_dir = Path("output/")
 parser = argparse.ArgumentParser()
 parser.add_argument("action", help="Action you would like to perform. Supported actions: build, run.")
 parser.add_argument("--root_url", nargs="?", const="/", type=str)
+parser.add_argument("--skip-cite", nargs="?", const="no", type=str)
 args = parser.parse_args()
 
 if args.action == "build" or args.action == "run":
@@ -33,7 +34,7 @@ if args.action == "build" or args.action == "run":
             #print(elem.attrib)
 
             if elem.tag == "rightbox":
-                out += "<div style='float: right;'>"
+                out += "<div style='float: right;padding:20px;'>"
                 for child in elem:
                     if child.tag == "img":
                         out += "<img src=\"" + child.text.strip() + "\">"
@@ -82,15 +83,18 @@ if args.action == "build" or args.action == "run":
                     if platform.system() == "Windows":
                         print("Warning: Citations are not supported on Windows, continuing without.")
 
-                    try:
-                        citation = citationlib.create_citation(
-                            elem.text.strip(),
-                            style=citationlib.Style.APA,
-                            output_format=citationlib.Format.HTML
-                        )
-                        out += citation
-                    except (ValueError, citationlib.exceptions.CitationError):
-                        out += "<p>" + elem.text.strip() + " (citations not supported on Windows)</p>"
+                    if args.skip_cite != "yes":
+                        try:
+                            citation = citationlib.create_citation(
+                                elem.text.strip(),
+                                style=citationlib.Style.APA,
+                                output_format=citationlib.Format.HTML
+                            )
+                            out += citation
+                        except (ValueError, citationlib.exceptions.CitationError):
+                            out += "<p>" + elem.text.strip() + " (citations not supported on Windows)</p>"
+                    else:
+                        out += "<p>" + elem.text.strip() + " (citation skip option enabled)</p>"
                 elif elem.tag == "code":
                     out += "<pre><code>" + elem.text.strip().replace("[LT]", "&lt;").replace("[GT]", "&gt;") + "</code></pre>"
 
