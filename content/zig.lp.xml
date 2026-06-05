@@ -1,0 +1,66 @@
+<lpml>
+    <title>Zig</title>
+    <tableofcontents>
+        Zig\br\
+        History\br\
+        Example Code\br\
+        References\br\
+    </tableofcontents>
+    <rightbox>
+        <h1>Zig</h1>
+        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Zig_logo_2020.svg/250px-Zig_logo_2020.svg.png</img>
+        <p>Created by: Andrew Kelley</p>
+        <p>First appeared: Feb 2016, 10 years ago</p>
+        <p>Memory management: Manual</p>
+        <p>Implementation language: Zig</p>
+        <p>OS: Linux, macOS, FreeBSD, Windows</p>
+        <p>License: MIT</p>
+        <p>Filename extensions: .zig, .zir, .zigr, .zon</p>
+        <p>Website:</p>
+        <link where="https://ziglang.org">ziglang.org</link>
+    </rightbox>
+    <h1 name="zig">Zig</h1>
+    <p>
+    Zig is a general-purpose programming language licensed under the MIT license.
+    It is designed to be an improvement to C, but with differences in control flow, function calls,
+    library imports, variable declaration, and Unicode support. Zig, like C, requires manual memory
+    management. Zig was created by Andrew Kelley, and first announced in 2016.
+    </p>
+    <h2 name="history">History</h2>
+    <p>
+    When Andrew Kelley began to develop a DAW (digital audio workstation), he found "Go interoperability with C libraries difficult, and found the garbage
+    collector caused audio delays". When he pivoted and tried C++, he found small mistakes quickly led to memory corruption bugs that took weeks to fix.
+    After trying Rust, he gave up there also, because he struggled to write code that satisfied Rust's rules, and reportedly spent a month trying to make font
+    rendering work.
+    \br\\br\
+    He eventually gave up and decided to create his own language, using a script that generated random combinations of letters starting with the letter Z to come up
+    with the name.
+    \br\\br\
+    Zig version 0.1.0, released on February 2016, introduced basic syntax and core concepts.
+    Zig version 0.5.0, released on September 26, 2019, added async functions, Android compatibility, and RISC-V support.
+    Zig version 0.10.0, released on October 31, 2022, added the self-hosted compiler backend, allowing independence from LLVM
+    for certain targets and enhanced WebAssembly support.
+    Zig version 0.11.0, released on August 4, 2023, introduced built-in package management.
+    Version 0.14.0, released on March 5, 2025, expanded target support for cross-compilation to more architectures,
+    and increased performance and reduced build times. The current stable release, version 0.16.0, released on April 14, 2026,
+    includes a revamped std.Io interface for async I/O and simplified package management with dependincies moved to a zig-pkg directory.
+    \br\\br\
+    On 26 November 2025, Zig development moved from GitHub to Codeberg, and the primary reason being Microsoft's AI policy.
+    </p>
+    <h2 name="example_code">Example Code</h2>
+    <p>The following code sample prints "hello world!" to the screen</p>
+    <link where="https://ziglang.org/learn/samples">Credit: ziglang.org/learn/samples</link>
+    <code>
+const std = @import("std");
+const Io = std.Io;
+
+pub fn main(init: std.process.Init) !void {
+    try Io.File.stdout().writeStreamingAll(init.io, "hello world!\n");
+}
+    </code>
+    <h2 name="references">References</h2>
+    <cite>https://ziglang.org</cite>
+    <cite>https://en.wikipedia.org/wiki/Zig_(programming_language)</cite>
+    <cite>https://corecursive.com/067-zig-with-andrew-kelley</cite>
+    <br />
+</lpml>
