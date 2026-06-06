@@ -34,7 +34,7 @@ if args.action == "build" or args.action == "run":
             #print(elem.attrib)
 
             if elem.tag == "rightbox":
-                out += "<div style='float: right;padding:20px;'>"
+                out += "<div style='float: right;padding:20px;' class='rightbox'>"
                 for child in elem:
                     if child.tag == "img":
                         out += "<img src=\"" + child.text.strip() + "\">"
