@@ -21,8 +21,8 @@
     <p>Rust began as a personal project by Mozilla employee Graydon Hoare. He started the project due to his frustration with a broken elevator in his apartment building whose software had crashed.</p>
     <p>During the early years, the Rust compiler was written in around 38,000 lines of OCaml, an "industrial-strength" functional programming language.</p>
     <h3>2009-2012: Mozilla Sponsorship</h3>
-    <p>Mozilla officially sponsored Rust in 2009. Executives placed enginners on the project including Patrick Walton, Niko Matsakis, Felix Klock, and Manish Goregaokar.</p>
-    <p>During this period, work shifted away from the inital OCaml compiler, to a complier written in Rust itself.</p>
+    <p>Mozilla officially sponsored Rust in 2009. Executives placed engineers on the project including Patrick Walton, Niko Matsakis, Felix Klock, and Manish Goregaokar.</p>
+    <p>During this period, work shifted away from the initial OCaml compiler, to a compiler written in Rust itself.</p>
     <h3>2012-2015: Evolution</h3>
     <p>During this time, Rust replaced its garbage collector with the ownership system and removed unnecessary extra features.</p>
     <p>Rust 1.0 was officially released in May 2015.</p>

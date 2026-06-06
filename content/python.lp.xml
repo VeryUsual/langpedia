@@ -15,7 +15,7 @@
     </rightbox>
     <h1 name="python">Python</h1>
     <p>
-    Python is an open-source intepreted programming language made as a language that is both easy to work on and understand.
+    Python is an open-source interpreted programming language made as a language that is both easy to work on and understand.
     It was made by a Dutch programmer named Guido van Rossum in 1991, who named it off of the television program Monty Python's Flying Circus.
     </p>
     <h2 name="history">History</h2>
@@ -23,7 +23,7 @@
     Python was thought up of in the late 1980s by Guido van Rossum, from the Netherlands.
     Python implementation first began in December of 1989.
     It was released originally in 1991 as Python 0.9.0.
-    Van Rossum had full resposibility of it, until July 2018, when he announced his "permanent vacation" from responsibilities.
+    Van Rossum had full responsibility of it, until July 2018, when he announced his "permanent vacation" from responsibilities.
     In January 2019, active Python developers elected a five-member council to lead the project.
     </p>
     <h2 name="example_code">Example Code</h2>

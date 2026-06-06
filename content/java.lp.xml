@@ -23,7 +23,7 @@
     <p>Java is a high-level, general-purpose programming language created by Sun Microsystems, which was later
     bought out by Oracle Corporation, which continues to update it to this day.</p>
     <p>Java applications are usually complied to bytecode that can run on any Java Virtual Machine (JVM),
-    meaning that Java programs can run on all platforms that support Java without needing to be recomplied.</p>
+    meaning that Java programs can run on all platforms that support Java without needing to be recompiled.</p>
     <p>The syntax of Java is very similar to that of C or C++, although with fewer low-level features.</p>
     <br />
     <p>Shortly after its release, Java gained large amounts of popularity, and has stayed a popular
@@ -38,7 +38,7 @@
     could "Write Once, Run Anywhere". Around 1995-1996, Java was rapidly adopted by web browsers
     like Netscape Navigator, which used Java applets for interactive web content. In 2006, Sun
     Microsystems released Java as open-source software under the GNU General Public License, to
-    increase adoption, mantain competivness against Microsoft's .NET, and enable community-driven
+    increase adoption, maintain competitiveness against Microsoft's .NET, and enable community-driven
     development across platforms. In 2010, Oracle Corporation acquired Sun Microsystems, and in
     the years after, added major features like generics, lambdas, and a module system.</p>
     <h2 name="example_code">Example Code</h2>

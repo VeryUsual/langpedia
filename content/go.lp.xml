@@ -27,7 +27,7 @@
     <h1 name="go">Go</h1>
     <p>
     Go is a high-level complied programming language known for its simple syntax and development efficiency.
-    It was created at Google in 2007 by 3 software developers, Robert Griesemer, Rob Pike, and Ken Thompson, and then was publicily announced to the world in November 2009.
+    It was created at Google in 2007 by 3 software developers, Robert Griesemer, Rob Pike, and Ken Thompson, and then was publicly announced to the world in November 2009.
     It is inspired by C's syntax, but adds garbage collection, structural typing, and concurrency.
     </p>
     <h2 name="history">History</h2>

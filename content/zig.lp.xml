@@ -43,7 +43,7 @@
     Zig version 0.11.0, released on August 4, 2023, introduced built-in package management.
     Version 0.14.0, released on March 5, 2025, expanded target support for cross-compilation to more architectures,
     and increased performance and reduced build times. The current stable release, version 0.16.0, released on April 14, 2026,
-    includes a revamped std.Io interface for async I/O and simplified package management with dependincies moved to a zig-pkg directory.
+    includes a revamped std.Io interface for async I/O and simplified package management with dependencies moved to a zig-pkg directory.
     \br\\br\
     On 26 November 2025, Zig development moved from GitHub to Codeberg, and the primary reason being Microsoft's AI policy.
     </p>

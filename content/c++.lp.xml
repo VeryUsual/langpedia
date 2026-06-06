@@ -27,21 +27,21 @@
     In 1979, a Danish computer scientist named Bjarne Stroustrup began work on "C with classes", the predecessor to C++.
     The motivation to create it came from his PhD thesis experience working with Simula, which had features very helpful for large software development, but was too slow.
     He then had the same motivation at Bell Labs, on the UNIX kernel.
-    He then set out to enchance C with Simula-like extra features.
+    He then set out to enhance C with Simula-like extra features.
     </p>
     <p>
-    Initally, his programming language added features to the C complier, like classes, derived classes, strong typing, inlining, and default arguments.
+    Initally, his programming language added features to the C compiler, like classes, derived classes, strong typing, and default arguments.
     </p>
     <p>
     In 1982, he started to develop a successor, named C++. Many new features were added, including virtual functions, function and operator overloading, references, constants, type-safe free-store memory allocation (new/delete), improved type checking, and single-line comments with two forward slashes.
-    He developed a new, standalone complier for C++, called Cfront.
+    He developed a new, standalone compiler for C++, called Cfront.
     </p>
     <p>
     In 1989, C++ 2.0 released, with features like multiple inheritance, abstract classes, static member functions,
     const member functions, and protected members.
     </p>
     <p>
-    In 1998, C++98 was released, officially ISO standardardizing the language, as ISO/IEC 14882:1998.
+    In 1998, C++98 was released, officially ISO standardising the language, as ISO/IEC 14882:1998.
     </p>
     <p>
     After C++98, C++ evolved slowly until, in 2011, C++11 was released, which added plenty of new features and grew the
