@@ -1,0 +1,65 @@
+<lpml>
+    <title>JavaScript</title>
+    <tableofcontents>
+        JavaScript\br\
+        History\br\
+        Example Code\br\
+        References\br\
+    </tableofcontents>
+    <rightbox>
+        <h1>JavaScript</h1>
+        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/JavaScript_code.png/330px-JavaScript_code.png</img>
+        <br />
+        <p>Website:</p>
+        <link where="https://ecma-international.org/publications-and-standards/standards/ecma-262/">EcmaScript Standard</link>
+        <p>Designed by: Brendan Eich from Netscape first, then others</p>
+        <p>First appeared: December 1995, 30 years ago</p>
+        <p>Memory management: Garbage collected</p>
+        <p>Filename extensions: .js, .mjs, .cjs</p>
+    </rightbox>
+    <h1 name="javascript">JavaScript</h1>
+    <p>
+    JavaScript is a high-level, just-in-time-compiled programming language designed for the Web. It was created by Brendan Eich in 1995,
+    and maintained to this day by Ecma International's TC39 technical committee. It has dynamic typing, prototype-based object orientation,
+    and first-class functions.
+    </p>
+    <h2 name="history">History</h2>
+    <p>
+    During the early years of the Web, pages could be only static, without the capability of 
+    dynamic content. So, in 1995, Netscape decided to add a programming language to their Web
+    browser. They both collaborated with Sun Microsystems to embed the Java language, and hired
+    Brendan Eich to embed the Scheme language.
+    \br\
+    Due to their goal of a "language for the masses", Netscape management decided that the best
+    option was to create a new language, with syntax like Java and less like Scheme. The new language
+    was originally called LiveScript, but was soon changed to JavaScript.
+    </p>
+    <p>
+    When Microsoft debuted Internet Explorer in 1995, it created a JavaScript interpreter called
+    JScript. When Microsoft released it, it led to difficulty for web developers as it was too
+    different from Netscape's implementation, which led to the "Best viewed in Internet Explorer" and
+    "Best viewed in Netscape Navigator" logos for several years.
+    </p>
+    <p>
+    In 1996, Netscape submitted JavaScript to Ecma International. This led to the official release
+    of the first ECMAScript language specification.
+    \br\
+    However, the standardization was weakened by Microsoft's Internet Explorer gaining a
+    95% market share, which led to JScript becoming the de-facto standard.
+    </p>
+    <p>
+    JavaScript started to change from its once stagnant state when Mozilla released the Firefox
+    browser.
+    \br\
+    When Chrome released with its V8 engine, others needed to change significantly to catch up.
+    </p>
+    <h2 name="example_code">Example Code</h2>
+    <code>
+let a = 5;
+let b = 2;
+console.log(a + b);
+console.log(true + 2);
+    </code>
+    <h2 name="references">References</h2>
+    <cite>https://en.wikipedia.org/wiki/JavaScript</cite>
+</lpml>
