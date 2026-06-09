@@ -1,0 +1,87 @@
+<lpml>
+    <title>Swift</title>
+    <tableofcontents>
+        Swift\br\
+        History\br\
+        Example Code\br\
+        References\br\
+    </tableofcontents>
+    <rightbox>
+        <h1>Swift</h1>
+        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Swift_logo.svg/250px-Swift_logo.svg.png</img>
+        <br />
+        <p>Website:</p>
+        <link where="https://www.swift.org">www.swift.org</link>
+        <p>Designed by: Chris Lattner, Doug Gregor, John McCall, Ted Kremenek, Joe Groff, and Apple Inc.</p>
+        <p>Developer: Apple Inc. and open-source contributors</p>
+        <p>First appeared: June 2014, 12 years ago</p>
+        <p>Memory Management: Automatic Reference Counting</p>
+        <p>OS: Apple's OS's (Darwin, iOS, iPadOS, macOS, tvOS, visionOS, watchOS), Linux, FreeBSD, Android, Windows, z/OS</p>
+        <p>License: Apache License 2.0 (version 2.2 and later), Proprietary (up to version 2.2).</p>
+        <p>Filename extensions: .swift, .SWIFT</p>
+    </rightbox>
+    <h1 name="swift">Swift</h1>
+    <p>
+    Swift is a high-level, general-purpose, compiled programming language created by Chris Lattner in 2010
+    for Apple Inc. that was first released in June 2014.
+    </p>
+    <p>
+    Apple intended Swift to support many core concepts of Objective-C, but in a safer way, making it easier to catch bugs.
+    </p>
+    <p>
+    Swift was introduced at Apple's 2014 Worldwide Developers Conference (WWDC). It was initally a proprietary language, but version 2.2
+    was made open-source under the Apache License 2.0 on December 3, 2015.
+    </p>
+    <h2 name="history">History</h2>
+    <p>
+    Development of Swift started in July 2010 by Chris Lattner, motivated by a need for a replacement
+    for Apple's earlier programming language Objective-C, which lacked modern language features.
+    </p>
+    <p>
+    On June 2, 2014, the Apple Worldwide Developers Conference (WWDC) application became the first publicly released
+    app written with Swift. A beta verison of the programming language was released to registered Apple developers at the
+    conference.
+    </p>
+    <p>
+    Swift reached version 1.0 on September 9, 2014, with Xcode 6.0 for iOS. Swift 1.1 was released on October 22, 2014, alongside the
+    launch of Xcode 6.1. Swift 1.2 was released on April 8, 2015, along with Xcode 6.3. Swift 2.0 was announced at WWDC 2015, and was
+    made available for publishing apps in the Apple App Store on September 21, 2015. Swift 3.0 was released on September 13, 2016,
+    bringing a significant evolution to the syntax.
+    </p>
+    <p>
+    On December 3, 2015, the Swift language, supporting libraries, debugger, and package manager were open-sourced under the Apache 2.0 license.
+    </p>
+    <p>
+    Swift won first place for Most Loved Programming Language in the 2015 Stack Overflow Developer Survey, and second place in 2016.
+    </p>
+    <p>
+    In January 2017, Chris Lattner announced his departure from Apple for a new position with Tesla Motors, so the Swift project lead role went to
+    Ted Kremenek.
+    </p>
+    <p>
+    Swift 4.0, released on September 19, 2017, introduced many changes to some built-in classes and structures. Swift 4.1 was released
+    on March 29, 2018. In the first quarter of 2018, Swift surpassed Objective-C in popularity.
+    </p>
+    <p>
+    Swift 5, released in March 2019, introduced a stable binary interface on Apple platforms, allowing the Swift runtime to be added into
+    Apple operating systems.
+    </p>
+    <p>
+    Swift 5.1 was released in September 2019. Swift 5.1 introduces module stability, extending the stable features of the language to compile-time.
+    The introduction of module stability makes it possible to create and share binary frameworks that will work with future releases of Swift.
+    </p>
+    <p>
+    Swift 5.5, announced by Apple at the 2021 WWDC, expands language support for concurrency and asynchoronous code. Swift 5.9, was released in
+    September 2023 and includes a macro system, generic parameter packs, and ownership features. Swift 5.10, released in March 2024, improves the
+    language's concurrency model, allowing for full data isolation to prevent data races.
+    </p>
+    <p>
+    Swift 6 was released on September 2024, and Swift 6.1, including new language enhancements to improve the language and experience, was released in March
+    2025.
+    </p>
+    <h2 name="example_code">Example Code</h2>
+    <p>The following line of code prints, "Hello, world!", to the terminal screen.</p>
+    <code>print("Hello, world!")</code>
+    <h2 name="references">References</h2>
+    <cite>https://en.wikipedia.org/wiki/Swift_(programming_language)</cite>
+</lpml>
