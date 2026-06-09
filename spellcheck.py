@@ -19,7 +19,12 @@ whitelisted_words = [
     "facto",
     "br",
     "async",
-    "backend"
+    "backend",
+    "dereferencing",
+    "foreach",
+    "bitwise",
+    "php",
+    "nullable"
 ]
 
 for file in content_dir.iterdir():
@@ -31,7 +36,7 @@ for file in content_dir.iterdir():
             if elem.tag == "p":
                 allwords = re.findall(r'\b\w+\b', elem.text.strip())
                 for word in allwords:
-                    if total_corrections == 3:
+                    if total_corrections == 5:
                         exit(0)
                     if dictionary.lookup(word) == False:
                         if word[0].isupper():

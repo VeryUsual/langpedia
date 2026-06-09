@@ -1,0 +1,87 @@
+<lpml>
+    <title>PHP</title>
+    <tableofcontents>
+        PHP\br\
+        History\br\
+        Example Code\br\
+        References\br\
+    </tableofcontents>
+    <rightbox>
+        <h1>PHP</h1>
+        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/250px-PHP-logo.svg.png</img>
+        <br />
+        <p>Website:</p>
+        <link where="https://www.php.net">www.php.net</link>
+        <p>Designed by: Rasmus Lerdorf</p>
+        <p>Developers: The PHP Development Team, Zend Technologies, PHP Foundation</p>
+        <p>First appeared: June 1995, 31 years ago</p>
+        <p>Implementation language: Primarily C, with some components in C++</p>
+        <p>OS: Unix-like, macOS, IBM i, OpenVMS, IBM Z, Windows</p>
+        <p>License: Modified BSD License</p>
+        <p>Filename extensions: .php, .phar, .phtml, .pht, .phps</p>
+    </rightbox>
+    <h1 name="php">PHP</h1>
+    <p>
+    PHP is a scripting language primarily focused on web development. It was created by programmer
+    Rasmus Lerdorf in 1993, and released in 1995. PHP was originally an acronym for Personal Home
+    Page, but now stands for PHP: Hypertext Preprocessor.
+    </p>
+    <p>
+    The standard PHP interpreter is free software under the PHP License. PHP was been widely ported
+    and can be used on many operating systems.
+    </p>
+    <h2 name="history">History</h2>
+    <h3>Early History (1993 to 1997)</h3>
+    <p>
+    PHP development began in 1993, when several CGI programs were written, which were used to
+    maintain Rasmus Lerdorf's personal homepage. He called his program "Personal Home Page /
+    Forms Interpreter" (PHP/FI).
+    </p>
+    <p>
+    PHP/FI could be used to build simple, dynamic web applications. Early PHP was never intended
+    to be a full programming language, but it simply just grew organically. The fact that PHP
+    was never originally designed led to inconsistent naming of functions and order of
+    parameters.
+    </p>
+    <h3>PHP 3 and 4 (1998 to 2004)</h3>
+    <p>
+    Zeev Suraski and Andi Gutmans rewrote the parser in 1997 and created the base of PHP 3,
+    also changing the name of the language to the recursive acronym "PHP: Hypertext Preprocessor".
+    After the official launch of PHP 3 in June 1998, Suraski and Gutmans started a new rewrite
+    of PHP's core, creating the Zend Engine. Additionally, they founded Zend Technologies.
+    On May 2000, PHP 4.0, powered by Zend Engine, was released.
+    </p>
+    <h3>PHP 5 (2004 to 2006)</h3>
+    <p>
+    On July 1 2024, PHP 5.0 was released, powered by the new Zend Engine 2.0. PHP 5.0 changed
+    the language significantly, adding object-oriented programming, iterators, and exceptions.
+    </p>
+    <h3>PHP 7 (2015 to 2019)</h3>
+    <p>
+    During 2014 and 2015, PHP 7.0 was being developed. The foundation of it was from a PHP branch
+    originally called PHP next generation, written by Dmitry Stogov, Xinchen Hui, and Nikita Popov.
+    By 2014, WordPress benchmarks showed an almost 100% increase in performance. Due to these
+    significant changes, the new Zend Engine was called Zend Engine 3, succeeding Zend Engine 2.
+    </p>
+    <p>
+    PHP 7.0 introduced many changes, some which were not backward compatible, such as more consistent
+    variable dereferencing, a more predictable foreach, and consistency of bitwise shifts. Several legacy
+    features were removed, such as the legacy MySQL extension, ASP-style delimiters, and language="php"
+    script tags. PHP 7.0 also changed PHP's type system significantly, introducing it to function
+    return types, adding scalar types, iterable type, nullable types, and the void return type.
+    </p>
+    <h3>PHP 8 (2020-Present)</h3>
+    <p>
+    PHP 8.0 was released on November 2020, as a major version with breaking changes. One of the largest
+    changes was the addition of a just-in-time (JIT) compiler, which improved performance massively.
+    </p>
+    <h2 name="example_code">Example Code</h2>
+    <p>The following is a "Hello, world" program written in PHP code.</p>
+    <code>
+[LT]?php
+echo "Hello World!";
+?[GT]
+    </code>
+    <h2 name="references">References</h2>
+    <cite>https://en.wikipedia.org/wiki/PHP</cite>
+</lpml>
