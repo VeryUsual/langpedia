@@ -5,6 +5,9 @@ import re
 import os
 import citationlib
 import platform
+from urllib.parse import quote_plus
+import requests
+import json
 
 content_dir = Path("content/")
 output_dir = Path("output/")
@@ -16,6 +19,7 @@ parser.add_argument("--skip-cite", nargs="?", const="no", type=str)
 args = parser.parse_args()
 
 if args.action == "build" or args.action == "run":
+    print(str(len(list(content_dir.iterdir()))) + " total files to compile.")
     for file in content_dir.iterdir():
         template = ""
         with open("template.html", "r") as f:
@@ -29,9 +33,10 @@ if args.action == "build" or args.action == "run":
         root = tree.getroot()
 
         for elem in root.iter():
-            #print(elem.tag)
-            #print(elem.text.strip())
-            #print(elem.attrib)
+            if elem.text is not None:
+                text = elem.text.strip()
+            else:
+                text = ""           
 
             if elem.tag == "rightbox":
                 out += "<div style='float: right;padding:20px;' class='rightbox'>"
@@ -51,34 +56,34 @@ if args.action == "build" or args.action == "run":
             
             if elem.getparent() == None or elem.getparent().tag != "rightbox":
                 if elem.tag == "title":
-                    out += "<title>" + elem.text.strip() + " - Langpedia</title>"
+                    out += "<title>" + text + " - Langpedia</title>"
                 elif elem.tag == "tableofcontents":
-                    for i in elem.text.strip().split("\\br\\"):
+                    for i in text.split("\\br\\"):
                         sidebar += "<a href='#" + i.lower().strip().replace("\\sp\\", "").replace("\\br\\", "").replace(" ", "_") + "'>" + i + "</a>"
                 elif elem.tag == "p":
-                    out += "<p>" + elem.text.strip() + "</p>"
+                    out += "<p>" + text + "</p>"
                 elif elem.tag == "h1":
                     if "name" in elem.attrib:
-                        out += "<h1 id=\"" + elem.attrib["name"] + "\">" + elem.text.strip() + "</h1>"
+                        out += "<h1 id=\"" + elem.attrib["name"] + "\">" + text + "</h1>"
                     else:
-                        out += "<h1>" + elem.text.strip() + "</h1>"
+                        out += "<h1>" + text + "</h1>"
                 elif elem.tag == "h2":
                     if "name" in elem.attrib:
-                        out += "<h2 id=\"" + elem.attrib["name"] + "\">" + elem.text.strip() + "</h2>"
+                        out += "<h2 id=\"" + elem.attrib["name"] + "\">" + text + "</h2>"
                     else:
-                        out += "<h2>" + elem.text.strip() + "</h2>"
+                        out += "<h2>" + text + "</h2>"
                 elif elem.tag == "h3": 
                     if "name" in elem.attrib:
-                        out += "<h3 id=\"" + elem.attrib["name"] + "\">" + elem.text.strip() + "</h3>"
+                        out += "<h3 id=\"" + elem.attrib["name"] + "\">" + text + "</h3>"
                     else:
-                        out += "<h3>" + elem.text.strip() + "</h3>"
+                        out += "<h3>" + text + "</h3>"
                 elif elem.tag == "br":
                     out += "<br>"
                 elif elem.tag == "link":
                     where = elem.attrib["where"]
                     if where.endswith(".lp.xml"):
                         where = where.replace(".lp.xml", ".html")
-                    out += "<a href=\"" + where + "\">" + elem.text.strip() + "</a>"
+                    out += "<a href=\"" + where + "\">" + text + "</a>"
                 elif elem.tag == "cite":
                     if platform.system() == "Windows":
                         print("Warning: Citations are not supported on Windows, continuing without.")
@@ -86,17 +91,17 @@ if args.action == "build" or args.action == "run":
                     if args.skip_cite != "yes":
                         try:
                             citation = citationlib.create_citation(
-                                elem.text.strip(),
+                                text,
                                 style=citationlib.Style.APA,
                                 output_format=citationlib.Format.HTML
                             )
                             out += citation
                         except (ValueError, citationlib.exceptions.CitationError):
-                            out += "<p>" + elem.text.strip() + " (citations not supported on Windows)</p>"
+                            out += "<p>" + text + " (citations not supported on Windows)</p>"
                     else:
-                        out += "<p>" + elem.text.strip() + " (citation skip option enabled)</p>"
+                        out += "<p>" + text + " (citation skip option enabled)</p>"
                 elif elem.tag == "code":
-                    out += "<pre><code>" + elem.text.strip().replace("[LT]", "&lt;").replace("[GT]", "&gt;") + "</code></pre>"
+                    out += "<pre><code>" + text.replace("[LT]", "&lt;").replace("[GT]", "&gt;") + "</code></pre>"
 
         out = out.replace("\\br\\", "<br>").replace("\\sp\\", "&nbsp;")
         sidebar = sidebar.replace("\\br\\", "<br>").replace("\\sp\\", "&nbsp;")

@@ -76,9 +76,14 @@ body {
 .rightbox {
   text-align: center;
 }
+
+p {
+  line-height: 150%;
+}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 </head>
 <body>
 
@@ -86,6 +91,7 @@ body {
 
 <div class="topnav">
   <a href="{{ROOT}}">Home</a>
+  <button style="float:right;font-size:15px;" onclick="translateTxt()">Translate</button>
 </div>
 
 <div class="main">
@@ -93,7 +99,42 @@ body {
     {{content}}
 </div>
 
-<script>hljs.highlightAll();</script>
+<script>
+var current_lang = "en";
+
+hljs.highlightAll();
+
+function addDarkmodeWidget() {
+  const options = {
+    autoMatchOsTheme: false
+  }
+
+  new Darkmode(options).showWidget();
+}
+window.addEventListener('load', addDarkmodeWidget);
+
+function translateTxt() {
+  const lang = prompt("What language would you like the content to be translated to (use the TWO LETTER code for it, for example, en, fr, es, etc)?");
+  const old_lang = current_lang;
+
+  document.querySelectorAll("p").forEach(elem => {
+    const req = new XMLHttpRequest();
+    req.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        elem.textContent = JSON.parse(this.responseText)["translated-text"];
+        current_lang = lang;
+      }
+    }
+    req.open(
+      "GET",
+      "https://mozhi.pussthecat.org/api/translate?engine=google&from=" + 
+        old_lang + "&to=" + 
+        lang + "&text=" + encodeURIComponent(elem.textContent)
+      );
+    req.send();
+  });
+}
+</script>
 
 </body>
 </html>
