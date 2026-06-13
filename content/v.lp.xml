@@ -1,0 +1,39 @@
+<lpml>
+    <title>V</title>
+    <tableofcontents>
+        V\br\
+        History\br\
+        Example Code\br\
+        References\br\
+    </tableofcontents>
+    <rightbox>
+        <h1>V</h1>
+        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/V_Logo_SVG.svg/250px-V_Logo_SVG.svg.png</img>
+        <p>Website:</p>
+        <link where="https://vlang.io">vlang.io</link>
+        <p>Designed by: Alexander Medvednikov</p>
+        <p>First appeared: 20 June 2019, 6 years ago</p>
+        <p>Implementation language: V</p>
+        <p>OS: Windows, Linux, macOS, OpenBSD, FreeBSD,\br\NetBSD, Dragonfly BSD, Solaris, other Unix-like</p>
+        <p>License: MIT</p>
+        <p>Filename extensions: .v, .vsh</p>
+    </rightbox>
+    <h1 name="v">V</h1>
+    <p>
+    V is a statically-typed, compiled programming language created by Alexander Medvednikov in 2019 inspired by Go, Oberon, Swift, Rust, and other programming languages. It is currently
+    in beta.
+    </p>
+    <h2 name="history">History</h2>
+    <p>
+    V was created due to frustration with existing programming languages being used for personal projects. It was first intended for personal use, but then was publicly shared. On release, the compiler was already written in V. The design goals of V were being easy to learn and use, high readability, increased safety, efficient development, cross-platform support, modern features, and more maintainable software. In 2025, V started being ranked on the TIOBE index, a measure of popularity of languages maintained by TIOBE Software BV.
+    </p>
+    <h2 name="example_code">Example Code</h2>
+    <p>The following code prints the string, "Hello, world!" to the console.</p>
+    <code>
+fn main() {
+    println("Hello, world!")
+}
+    </code>
+    <h2 name="references">References</h2>
+    <cite>https://en.wikipedia.org/wiki/V_(programming_language)</cite>
+</lpml>
