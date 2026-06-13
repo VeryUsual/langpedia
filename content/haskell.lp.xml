@@ -1,0 +1,52 @@
+<lpml>
+    <title>Haskell</title>
+    <tableofcontents>
+        Haskell\br\
+        History\br\
+        Example Code\br\
+        References\br\
+    </tableofcontents>
+    <rightbox>
+        <h1>Haskell</h1>
+        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Logo_of_the_Haskell_programming_language.svg/250px-Logo_of_the_Haskell_programming_language.svg.png</img>
+        <p>Website:</p>
+        <link where="https://www.haskell.org">www.haskell.org</link>
+        <p>Paradigm: Functional</p>
+        <p>First appeared: 1990, 36 years ago</p>
+        <p>Filename extensions: .hs, .lhs</p>
+    </rightbox>
+    <h1 name="haskell">Haskell</h1>
+    <p>
+    Haskell is a general-purpose, statically-typed, functional programming language. It has many
+    implementations, although its main one is the Glasgow Haskell Compiler (GHC).
+    </p>
+    <h2 name="history">History</h2>
+    <p>
+    After Research Software Ltd. released Miranda in 1985, interest in functional languages
+    grew significantly. Although, Miranda was proprietary software, and at a conference
+    in Portland, in the United States, there was a strong want for an open standard for
+    these languages, and they wanted to consolidate existing functional languages into a
+    common one to serve as a basis.
+    </p>
+    <p>
+    Haskell was developed by a committee. The first version of Haskell, Haskell 1.0, was defined
+    in 1990.
+    </p>
+    <p>
+    In 1997, Haskell 98 was thought up, with a purpose to specify a stable, minimal, portable
+    version of Haskell and a standard library, along with support for future extensions.
+    </p>
+    <p>
+    In 2006, a successor to the Haskell 98 standard began. It was named Haskell 2010, and
+    announced in November 2009 and published in July 2010.
+    </p>
+    <h2 name="example_code">Example Code</h2>
+    <code>
+module Main (main) where
+
+main :: IO ()
+main = putStrLn "Hello, world!"
+    </code>
+    <h2 name="references">References</h2>
+    <cite>https://en.wikipedia.org/wiki/Haskell</cite>
+</lpml>

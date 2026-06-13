@@ -37,6 +37,8 @@
     <link where="go.lp.xml">Go</link>
     <br />
     <h3>H</h3>
+    <link where="haskell.lp.xml">Haskell</link>
+    <br />
     <h3>I</h3>
     <h3>J</h3>
     <link where="java.lp.xml">Java</link>
