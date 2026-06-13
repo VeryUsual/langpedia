@@ -68,6 +68,8 @@ if args.action == "build" or args.action == "run":
                     out += "<" + text + ">"
                 elif elem.tag == "htmltagend":
                     out += "</" + text + ">"
+                elif elem.tag == "css":
+                    out += "<style>" + text + "</style>"
                 elif elem.tag == "title":
                     out += "<title>" + text + " - Langpedia</title>"
                 elif elem.tag == "tableofcontents":

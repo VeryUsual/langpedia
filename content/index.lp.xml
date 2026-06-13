@@ -5,6 +5,25 @@
         Top Articles\br\
         All Articles\br\
     </tableofcontents>
+    <css>
+    #langpedia {
+        animation: growrotate 1.5s ease-in-out infinite alternate;
+        color: lightblue;
+    }
+
+    @keyframes growrotate {
+        from {
+            transform: scale(1) rotate(-4deg);
+        }
+        to {
+            transform: scale(1.1) rotate(10deg);
+        }
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    </css>
     <htmltag>div style='text-align: center;'</htmltag>
         <h1 name="langpedia">Langpedia</h1>
         <i>An encyclopedia of programming languages</i>
