@@ -19,7 +19,9 @@ parser.add_argument("--skip-cite", nargs="?", const="no", type=str)
 args = parser.parse_args()
 
 if args.action == "build" or args.action == "run":
-    print(str(len(list(content_dir.iterdir()))) + " total files to compile.")
+    totalarticles = len(list(content_dir.iterdir()))
+    print(str(totalarticles) + " total files to compile.")
+
     for file in content_dir.iterdir():
         template = ""
         with open("template.html", "r") as f:
@@ -54,8 +56,19 @@ if args.action == "build" or args.action == "run":
                 out += "</div>"
                 continue
             
+            if elem.getparent() is not None and elem.getparent().tag == "html":
+                continue
+
             if elem.getparent() == None or elem.getparent().tag != "rightbox":
-                if elem.tag == "title":
+                if elem.tag == "html" and "html" in elem.attrib:
+                    out += elem.attrib["html"]
+                elif elem.tag == "html":
+                    out += text
+                elif elem.tag == "htmltag":
+                    out += "<" + text + ">"
+                elif elem.tag == "htmltagend":
+                    out += "</" + text + ">"
+                elif elem.tag == "title":
                     out += "<title>" + text + " - Langpedia</title>"
                 elif elem.tag == "tableofcontents":
                     for i in text.split("\\br\\"):
@@ -84,6 +97,10 @@ if args.action == "build" or args.action == "run":
                     if where.endswith(".lp.xml"):
                         where = where.replace(".lp.xml", ".html")
                     out += "<a href=\"" + where + "\">" + text + "</a>"
+                elif elem.tag == "span":
+                    out += "<span>" + text + "</span>"
+                elif elem.tag == "i":
+                    out += "<i>" + text + "</i>"
                 elif elem.tag == "cite":
                     if platform.system() == "Windows":
                         print("Warning: Citations are not supported on Windows, continuing without.")
@@ -102,6 +119,9 @@ if args.action == "build" or args.action == "run":
                         out += "<p>" + text + " (citation skip option enabled)</p>"
                 elif elem.tag == "code":
                     out += "<pre><code>" + text.replace("[LT]", "&lt;").replace("[GT]", "&gt;") + "</code></pre>"
+                elif elem.tag == "lpml": pass
+                else:
+                    print("Unknown tag:", elem.tag)
 
         out = out.replace("\\br\\", "<br>").replace("\\sp\\", "&nbsp;")
         sidebar = sidebar.replace("\\br\\", "<br>").replace("\\sp\\", "&nbsp;")
@@ -118,7 +138,15 @@ if args.action == "build" or args.action == "run":
 
         content = file.read_text(encoding="utf-8", errors="ignore")
         output_file = output_dir / (file.name.replace(".lp.xml", ".html"))
-        output_file.write_text((template.replace("{{content}}", out).replace("{{sidebar}}", sidebar)).replace("{{ROOT}}", root_url), encoding="utf-8")
+        output_file.write_text(
+            (
+                template
+                    .replace("{{content}}", out)
+                    .replace("{{sidebar}}", sidebar)
+            )
+                .replace("{{ROOT}}", root_url)
+                .replace("{{totalarticlecount}}", str(totalarticles)),
+        encoding="utf-8")
 
     if args.action == "run":
         os.system("python -m http.server -d output")

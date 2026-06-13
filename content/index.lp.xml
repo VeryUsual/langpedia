@@ -5,8 +5,12 @@
         Top Articles\br\
         All Articles\br\
     </tableofcontents>
-    <h1 name="langpedia">Langpedia</h1>
-    <p>An encyclopedia of programming languages</p>
+    <htmltag>div style='text-align: center;'</htmltag>
+        <h1 name="langpedia">Langpedia</h1>
+        <i>An encyclopedia of programming languages</i>
+        <p>{{totalarticlecount}} total articles</p>
+    <htmltagend>div</htmltagend>
+    <br />
     <h2 name="top_articles">Top articles</h2>
     <link where="rust.lp.xml">Rust</link>
     <br />
@@ -15,7 +19,7 @@
     <link where="c++.lp.xml">C++</link>
     <br />
     <link where="python.lp.xml">Python</link>
-    <br />
+    <br /><br />
     <h2 name="all_articles">All articles (sorted alphabetically)</h2>
     <h3>A</h3>
     <h3>B</h3>

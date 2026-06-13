@@ -2,10 +2,12 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
 <style>
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+  background-color: #f4f4f5;
 }
 
 .topnav {
@@ -98,6 +100,11 @@ p {
 <div class="main">
     <br><br>
     {{content}}
+    <br><br>
+    <div style="font-size: 12px; color: grey;">
+      <i>All Langpedia content is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0 License</a>.</i>
+    </div>
+    <br><br>
 </div>
 
 <script>
@@ -118,7 +125,7 @@ function translateTxt() {
   const lang = prompt("What language would you like the content to be translated to (use the TWO LETTER code for it, for example, en, fr, es, etc)?");
   const old_lang = current_lang;
 
-  document.querySelectorAll("p").forEach(elem => {
+  document.querySelectorAll("p, h1, h2, h3").forEach(elem => {
     const req = new XMLHttpRequest();
     req.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
