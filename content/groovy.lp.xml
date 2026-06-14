@@ -1,0 +1,49 @@
+<lpml>
+    <title>Groovy</title>
+    <tableofcontents>
+        Groovy\br\
+        History\br\
+        Example Code\br\
+        References\br\
+    </tableofcontents>
+    <rightbox>
+        <h1>Groovy</h1>
+        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Groovy-logo.svg/250px-Groovy-logo.svg.png</img>
+        <p>Website:</p>
+        <link where="https://groovy-lang.org">groovy-lang.org</link>
+        <p>Designed by: James Strachan</p>
+        <p>First appeared: 2003, 23 years ago</p>
+        <p>License: Apache 2.0</p>
+        <p>Filename extensions: .groovy, .gvy, .gy, .gsh</p>
+    </rightbox>
+    <h1 name="groovy">Groovy</h1>
+    <p>
+    Groovy is object-oriented programming language that runs on the JVM. Groovy uses curly-bracket syntax, like Java's. It is both a static and dynamic language, and can be used as a programming and scripting language.
+    </p>
+    <h2 name="history">History</h2>
+    <p>
+    In August 2003, James Strachan first talked about developing Groovy on his blog. In March 2004, Groovy was submitted to the Java Community Process and was accepted by ballot. Several beta and early versions were released from 2004 to 2006, and stable versions were released in 2006. Version 1.0 was released on 2 January 2007. After many betas and release candidates numbered 1.1, Groovy 1.1 Final was released, and immediately renumbered as Groovy 1.5 to reflect the many changes made.
+    </p>
+    <p>
+    In 2007, Groovy won the first prize at the JAX 2007 innovation award. In 2008, a Groovy web framework named Grails, won the second price at the JAX 2008 innovation award.
+    </p>
+    <p>
+    On 2 July 2012, Groovy 2.0 was released, which added features such as static compiling and static type checking.
+    </p>
+    <p>
+    In April 2013, Groovy changed its governance structure from a Codehaus repository to a Project Management Committee in the Apache Software Foundation. Groovy graduated from an incubator and became a top-level project in November 2015.
+    </p>
+    <p>
+    On 7 February 2020, Groovy 3.0 was released, introducing a major overhaul to the language with around 600 bug fixes and new features, such as a revamped parser codenamed Parrot that replaced the old Antlr2 parser.
+    </p>
+    <p>
+    On 25 January 2022, Groovy 4.0 was released, introducing many major features like switch expressions, sealed types, and record types.
+    </p>
+    <h2 name="example_code">Example Code</h2>
+    <p>The following snippet of Groovy code prints "Hello, world!" to the terminal window.</p>
+    <code>
+println 'Hello, world!'
+    </code>
+    <h2 name="references">References</h2>
+    <cite>https://en.wikipedia.org/wiki/Apache_Groovy</cite>
+</lpml>

@@ -19,7 +19,12 @@ parser.add_argument("--skip-cite", nargs="?", const="no", type=str)
 args = parser.parse_args()
 
 if args.action == "build" or args.action == "run":
-    totalarticles = len(list(content_dir.iterdir()))
+    allarticles = list(content_dir.iterdir())
+    allarticlesnames = []
+    for article in allarticles:
+        allarticlesnames.append(article.name.replace(".lp.xml", ""))
+
+    totalarticles = len(allarticles)
     print(str(totalarticles) + " total files to compile.")
 
     for file in content_dir.iterdir():
@@ -70,6 +75,8 @@ if args.action == "build" or args.action == "run":
                     out += "</" + text + ">"
                 elif elem.tag == "css":
                     out += "<style>" + text + "</style>"
+                elif elem.tag == "JS":
+                    out += "<script>" + text + "</script>"
                 elif elem.tag == "title":
                     out += "<title>" + text + " - Langpedia</title>"
                 elif elem.tag == "tableofcontents":
@@ -132,6 +139,8 @@ if args.action == "build" or args.action == "run":
             root_url = "/"
         else:
             root_url = args.root_url
+            if not root_url.endswith("/"):
+                root_url = root_url + "/"
         
         for f in content_dir.iterdir():
             page = f.name.replace(".lp.xml", "")
@@ -147,7 +156,8 @@ if args.action == "build" or args.action == "run":
                     .replace("{{sidebar}}", sidebar)
             )
                 .replace("{{ROOT}}", root_url)
-                .replace("{{totalarticlecount}}", str(totalarticles)),
+                .replace("{{totalarticlecount}}", str(totalarticles))
+                .replace("{{ARTICLES_ARRAY}}", str(allarticlesnames)),
         encoding="utf-8")
 
     if args.action == "run":

@@ -55,6 +55,8 @@
     <h3>G</h3>
     <link where="go.lp.xml">Go</link>
     <br />
+    <link where="groovy.lp.xml">Groovy</link>
+    <br />
     <h3>H</h3>
     <link where="haskell.lp.xml">Haskell</link>
     <br />

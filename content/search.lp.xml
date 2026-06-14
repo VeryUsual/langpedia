@@ -1,0 +1,44 @@
+<lpml>
+    <title>Search</title>
+    <css>
+    #langpedia {
+        animation: growrotate 1.5s ease-in-out infinite alternate;
+        color: lightblue;
+    }
+
+    @keyframes growrotate {
+        from {
+            transform: scale(1) rotate(-4deg);
+        }
+        to {
+            transform: scale(1.1) rotate(10deg);
+        }
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    </css>
+    <htmltag>div style='text-align: center;'</htmltag>
+        <h1 name="langpedia">Search Langpedia</h1>
+        <br />
+        <i>Search Langpedia's {{totalarticlecount}} articles:</i>
+        <br /><br />
+        <htmltag>input type='text' id='searchinput'</htmltag>
+    <htmltagend>div</htmltagend>
+    <br />
+    <br />
+    <JS>
+
+    const articles = {{ARTICLES_ARRAY}};
+    const searchinput = document.getElementById("searchinput");
+
+    searchinput.addEventListener('keydown', function(event) {
+        if (event.key == "Enter") {
+            var article = articles.filter(a => a.includes(searchinput.value.toLowerCase()))[0];
+            window.location.href = "{{ROOT}}" + article + ".html";
+        }
+    });
+
+    </JS>
+</lpml>
