@@ -1,4 +1,11 @@
+import os
+
 article_name = input("Please specify your article's name, e.g. Zig, Rust, etc (spaces not allowed): ")
+
+if os.path.exists("content/" + article_name.lower() + ".lp.xml"):
+    print("File already exists.")
+    exit(0)
+
 template = """
 <lpml>
     <title>{{ARTICLE_NAME}}</title>

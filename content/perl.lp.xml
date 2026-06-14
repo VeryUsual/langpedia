@@ -1,0 +1,99 @@
+<lpml>
+    <title>Perl</title>
+    <tableofcontents>
+        Perl\br\
+        History\br\
+        Example Code\br\
+        References\br\
+    </tableofcontents>
+    <rightbox>
+        <h1>Perl</h1>
+        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Perl-logo.svg/250px-Perl-logo.svg.png</img>
+        <p>Website:</p>
+        <link where="https://www.perl.org">www.perl.org</link>
+        <p>Designed by: Larry Wall</p>
+        <p>Developer: Larry Wall</p>
+        <p>First appeared: 18 December 1987, 38 years ago</p>
+        <p>Implementation language: C</p>
+        <p>License: Artistic 1.0 or GNU General Public License version 1 or later</p>
+        <p>Filename extensions: .plx, .pls, .pl, .pm, .xs, .t, .pod, .cgi, .pcgi</p>
+    </rightbox>
+    <h1 name="perl">Perl</h1>
+    <p>
+    Perl is a high-level, general-purpose, interpreted programming language that was developed by Larry Wall in 1987 as a Unix scripting language for report processing. The latest release is Perl 5. From 2000 to 2019 a sixth version of Perl was in development, but its name was changed to Raku. Both Perl 5 and Raku, developed independent of eachother, borrow eachothers ideas often.
+    </p>
+    <p>
+    Perl gained popularity in the 1990s as a CGI scripting language, due to somewhat of its powerful regular expression and string parsing abilities. Perl 5 is also used for system administration, network programming, finance, bioinformatics, and GUIs.
+    </p>
+    <h2 name="history">History</h2>
+    <h3>Early versions</h3>
+    <p>
+    Larry Wall began work on Perl in 1987, and released version 1.0 on 18 December 1987. Perl 2 was released in June 1988 and added a better regular expression engine. Perl 3 was released in October 1989 and added support for binary data streams.
+    </p>
+    <h3>1990s</h3>
+    <p>
+    Originally, the only documentation for Perl was a large man page. In 1991, a book was published, Programming Perl, and became the reference for language. At the same time, Perl's version number was bumped to 4, to identify the version that was documented in this book.
+    </p>
+    <p>
+    Perl 5.000 was released on 17 October 1994, with a complete rewrite of the interpreter and added many new features like objects, references, lexical variables, and modules.
+    </p>
+    <p>
+    Perl 5.002 was released on 29 February 1996 with the new prototypes feature. This allowed module authors to make subroutines that behaved like Perl builtins.
+    </p>
+    <p>
+    Perl 5.004 was released on 15 May 1997 and added things like the UNIVERSAL package, which gives Perl a base object that all classes are derived from, and the addition of the CGI.pm module, and it added support for Microsoft Windows, Plan 9, QNX, and AmigaOS.
+    </p>
+    <p>
+    Perl 5.005 was released on 22 July 1998, and added enchancements to the regex engine, new hooks into the backend, the qr// regex quote operator, new core modules, and support for more operating systems.
+    </p>
+    <h3>2000-2020</h3>
+    <p>
+    Perl 5.6 was released on 22 March 2000, and introduced changes like 64-bit support, Unicode string representation, support for files over 2 GB, and the "our" keyword.
+    </p>
+    <p>
+    Perl 5.8 was released on 18 July 2002, improving Unicode support, adding a new thread implementation, improved accuracy of numbers, and added some new modules.
+    </p>
+    <p>
+    Perl 5.10.0 was released on 18 December 2007, the 20th anniversary of Perl. Perl 5.10.0 added many features, such as a switch statement, regular expression updates, and the smart match operator.
+    </p>
+    <p>
+    On 12 April 2010, Perl 5.12.0 was released, with additions such as new package NAME VERSION syntax, the yada yada operator (intended to mark placeholder code that is not yet implemented), implicit structures, full compliance with the Y2038 problem's solution, regex conversion overloading, DTrace support, and Unicode 5.2.
+    </p>
+    <p>
+    On 14 May 2011, Perl 5.14 was released with built-in JSON support.
+    </p>
+    <p>
+    On 20 May 2012, Perl 5.16 was released with the ability to specify a given version of Perl to emulate, which allowed users to run newer Perl versions with compatibility with older scripts.
+    </p>
+    <p>
+    On 18 May 2013, Perl 5.18 was released with new dtrace hooks, lexical subs, more CORE:: subs, overhaul of the hash due to security, and support for Unicode 6.2.
+    </p>
+    <p>
+    On 27 May 2014, Perl 5.20 was released with many new features such as subroutine signatures, hash slices, new slice syntax, postfix dereferencing, Unicode 6.3, and a rand() function.
+    </p>
+    <h3>Perl 6 and Raku</h3>
+    <p>
+    At the 2020 Perl Conference, Jon Orwant proposed a redesign of the language, to be called Perl 6. Proposals for the language's features were in the form of RFCs.
+    </p>
+    <p>
+    Larry Wall spent the next few years digesting the RFCs and making them into a coherent framework for Perl 6.
+    </p>
+    <p>
+    In 2005, Audrey Tang created Pugs, an implementation of Perl 6 in \page:Haskell\, which acted as a test platform for the Perl 6 language seperate from the actual implementation in development.
+    </p>
+    <p>
+    In 2012, Perl 6 development was centred primarily on two compilers, Rakudo, an implementation running on the Parrot and Java virtual machines, and Niecza, which targets the Common Language Runtime.
+    </p>
+    <p>In October 2019, Perl 6 was renamed to Raku.</p>
+    <h3>Perl 7</h3>
+    <p>
+    On 24 June 2020, Perl 7 was announced as the successor to Perl 5 at the "Perl Conference in the Cloud". It was based on Perl 5.32, and planned to be backward compatible with Perl 5 code.
+    </p>
+    <h2 name="example_code">Example Code</h2>
+    <p>The following snippet of Perl code prints "Hello, world!" to the terminal.</p>
+    <code>
+print "Hello, world!\n";
+    </code>
+    <h2 name="references">References</h2>
+    <cite>https://en.wikipedia.org/wiki/Perl</cite>
+</lpml>
