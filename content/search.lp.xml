@@ -26,6 +26,8 @@
         <br /><br />
         <htmltag>input type='text' id='searchinput'</htmltag>
     <htmltagend>div</htmltagend>
+    <htmltag>div id='results'</htmltag>
+    <htmltagend>div</htmltagend>
     <br />
     <br />
     <JS>
@@ -35,8 +37,15 @@
 
     searchinput.addEventListener('keydown', function(event) {
         if (event.key == "Enter") {
-            var article = articles.filter(a => a.includes(searchinput.value.toLowerCase()))[0];
-            window.location.href = "{{ROOT}}" + article + ".html";
+            document.getElementById("results").innerHTML = "Results:\br\";
+            var results = articles.filter(a => a.includes(searchinput.value.toLowerCase()));
+            for (const article of results) {
+                const r = document.createElement("a");
+                r.textContent = article;
+                r.href = "{{ROOT}}" + article + ".html";
+                document.getElementById("results").appendChild(r);
+                document.getElementById("results").appendChild(document.createElement("br"));
+            }
         }
     });
 
