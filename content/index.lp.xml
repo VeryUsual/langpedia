@@ -1,11 +1,11 @@
-<lpml>
-    <title>Home</title>
-    <tableofcontents>
+<LPML>
+    <TITLE>Home</TITLE>
+    <TOC>
         Langpedia\br\
         Top Articles\br\
         All Articles\br\
-    </tableofcontents>
-    <css>
+    </TOC>
+    <CSS>
     #langpedia {
         animation: growrotate 1.5s ease-in-out infinite alternate;
         color: lightblue;
@@ -23,87 +23,87 @@
     body {
         overflow-x: hidden;
     }
-    </css>
-    <htmltag>div style='text-align: center;'</htmltag>
-        <h1 name="langpedia">Langpedia</h1>
-        <i>An encyclopedia of programming languages</i>
-        <p>{{totalarticlecount}} total articles</p>
-    <htmltagend>div</htmltagend>
-    <br />
-    <h2 name="top_articles">Top articles</h2>
-    <link where="rust.lp.xml">Rust</link>
-    <br />
-    <link where="c.lp.xml">C</link>
-    <br />
-    <link where="c++.lp.xml">C++</link>
-    <br />
-    <link where="python.lp.xml">Python</link>
-    <br /><br />
-    <h2 name="all_articles">All articles (sorted alphabetically)</h2>
-    <h3>A</h3>
-    <h3>B</h3>
-    <h3>C</h3>
-    <link where="c.lp.xml">C</link>
-    <br />
-    <link where="c++.lp.xml">C++</link>
-    <br />
-    <h3>D</h3>
-    <link where="dart.lp.xml">Dart</link>
-    <br />
-    <h3>E</h3>
-    <h3>F</h3>
-    <h3>G</h3>
-    <link where="go.lp.xml">Go</link>
-    <br />
-    <link where="groovy.lp.xml">Groovy</link>
-    <br />
-    <h3>H</h3>
-    <link where="haskell.lp.xml">Haskell</link>
-    <br />
-    <h3>I</h3>
-    <h3>J</h3>
-    <link where="java.lp.xml">Java</link>
-    <br />
-    <link where="javascript.lp.xml">JavaScript</link>
-    <br />
-    <h3>K</h3>
-    <link where="kotlin.lp.xml">Kotlin</link>
-    <br />
-    <h3>L</h3>
-    <h3>M</h3>
-    <h3>N</h3>
-    <h3>O</h3>
-    <h3>P</h3>
-    <link where="perl.lp.xml">Perl</link>
-    <br />
-    <link where="php.lp.xml">PHP</link>
-    <br />
-    <link where="python.lp.xml">Python</link>
-    <br />
-    <h3>Q</h3>
-    <h3>R</h3>
-    <link where="ruby.lp.xml">Ruby</link>
-    <br />
-    <link where="rust.lp.xml">Rust</link>
-    <br />
-    <h3>S</h3>
-    <link where="scala.lp.xml">Scala</link>
-    <br />
-    <link where="swift.lp.xml">Swift</link>
-    <br />
-    <h3>T</h3>
-    <link where="typescript.lp.xml">TypeScript</link>
-    <br />
-    <h3>U</h3>
-    <h3>V</h3>
-    <link where="v.lp.xml">V</link>
-    <br />
-    <h3>W</h3>
-    <h3>X</h3>
-    <h3>Y</h3>
-    <h3>Z</h3>
-    <link where="zig.lp.xml">Zig</link>
-    <br />
-    <br />
-    <br />
-</lpml>
+    </CSS>
+    <HTMLTG>div style='text-align: center;'</HTMLTG>
+        <H1 name="langpedia">Langpedia</H1>
+        <I>An encyclopedia of programming languages</I>
+        <P>{{totalarticlecount}} total articles</P>
+    <HTMLTGE>div</HTMLTGE>
+    <BR />
+    <H2 name="top_articles">Top articles</H2>
+    <LINK where="rust.lp.xml">Rust</LINK>
+    <BR />
+    <LINK where="c.lp.xml">C</LINK>
+    <BR />
+    <LINK where="c++.lp.xml">C++</LINK>
+    <BR />
+    <LINK where="python.lp.xml">Python</LINK>
+    <BR /><BR />
+    <H2 name="all_articles">All articles (sorted alphabetically)</H2>
+    <H3>A</H3>
+    <H3>B</H3>
+    <H3>C</H3>
+    <LINK where="c.lp.xml">C</LINK>
+    <BR />
+    <LINK where="c++.lp.xml">C++</LINK>
+    <BR />
+    <H3>D</H3>
+    <LINK where="dart.lp.xml">Dart</LINK>
+    <BR />
+    <H3>E</H3>
+    <H3>F</H3>
+    <H3>G</H3>
+    <LINK where="go.lp.xml">Go</LINK>
+    <BR />
+    <LINK where="groovy.lp.xml">Groovy</LINK>
+    <BR />
+    <H3>H</H3>
+    <LINK where="haskell.lp.xml">Haskell</LINK>
+    <BR />
+    <H3>I</H3>
+    <H3>J</H3>
+    <LINK where="java.lp.xml">Java</LINK>
+    <BR />
+    <LINK where="javascript.lp.xml">JavaScript</LINK>
+    <BR />
+    <H3>K</H3>
+    <LINK where="kotlin.lp.xml">Kotlin</LINK>
+    <BR />
+    <H3>L</H3>
+    <H3>M</H3>
+    <H3>N</H3>
+    <H3>O</H3>
+    <H3>P</H3>
+    <LINK where="perl.lp.xml">Perl</LINK>
+    <BR />
+    <LINK where="php.lp.xml">PHP</LINK>
+    <BR />
+    <LINK where="python.lp.xml">Python</LINK>
+    <BR />
+    <H3>Q</H3>
+    <H3>R</H3>
+    <LINK where="ruby.lp.xml">Ruby</LINK>
+    <BR />
+    <LINK where="rust.lp.xml">Rust</LINK>
+    <BR />
+    <H3>S</H3>
+    <LINK where="scala.lp.xml">Scala</LINK>
+    <BR />
+    <LINK where="swift.lp.xml">Swift</LINK>
+    <BR />
+    <H3>T</H3>
+    <LINK where="typescript.lp.xml">TypeScript</LINK>
+    <BR />
+    <H3>U</H3>
+    <H3>V</H3>
+    <LINK where="v.lp.xml">V</LINK>
+    <BR />
+    <H3>W</H3>
+    <H3>X</H3>
+    <H3>Y</H3>
+    <H3>Z</H3>
+    <LINK where="zig.lp.xml">Zig</LINK>
+    <BR />
+    <BR />
+    <BR />
+</LPML>

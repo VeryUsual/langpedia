@@ -1,73 +1,73 @@
-<lpml>
-    <title>C++</title>
-    <tableofcontents>
+<LPML>
+    <TITLE>C++</TITLE>
+    <TOC>
         C++\br\
         History\br\
         Example Code\br\
         References\br\
-    </tableofcontents>
-    <rightbox>
-        <h1>C++</h1>
-        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/250px-ISO_C%2B%2B_Logo.svg.png</img>
-        <br />
-        <p>Website:</p>
-        <link where="https://isocpp.org">isocpp.org</link>
-    </rightbox>
-    <h1 name="c++">C++</h1>
-    <p>
+    </TOC>
+    <RB>
+        <H1>C++</H1>
+        <IMG>https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/250px-ISO_C%2B%2B_Logo.svg.png</IMG>
+        <BR />
+        <P>Website:</P>
+        <LINK where="https://isocpp.org">isocpp.org</LINK>
+    </RB>
+    <H1 name="c++">C++</H1>
+    <P>
     C++ is a high-level programming language based on \page:C\.
     In the 1990s, C++ became one of the most used programming languages in the world.
     Like C, C++ uses manual memory management, and largely shares the same syntax with C, although there are some differences.
-    </p>
-    <p>
+    </P>
+    <P>
     The C++ programming language was developed by Bjarne Stroustrup at Bell Labs in the 1980s, and was originally named "C with classes".
-    </p>
-    <h2 name="history">History</h2>
-    <p>
+    </P>
+    <H2 name="history">History</H2>
+    <P>
     In 1979, a Danish computer scientist named Bjarne Stroustrup began work on "C with classes", the predecessor to C++.
     The motivation to create it came from his PhD thesis experience working with Simula, which had features very helpful for large software development, but was too slow.
     He then had the same motivation at Bell Labs, on the UNIX kernel.
     He then set out to enhance C with Simula-like extra features.
-    </p>
-    <p>
+    </P>
+    <P>
     Initally, his programming language added features to the C compiler, like classes, derived classes, strong typing, and default arguments.
-    </p>
-    <p>
+    </P>
+    <P>
     In 1982, he started to develop a successor, named C++. Many new features were added, including virtual functions, function and operator overloading, references, constants, type-safe free-store memory allocation (new/delete), improved type checking, and single-line comments with two forward slashes.
     He developed a new, standalone compiler for C++, called Cfront.
-    </p>
-    <p>
+    </P>
+    <P>
     In 1989, C++ 2.0 released, with features like multiple inheritance, abstract classes, static member functions,
     const member functions, and protected members.
-    </p>
-    <p>
+    </P>
+    <P>
     In 1998, C++98 was released, officially ISO standardising the language, as ISO/IEC 14882:1998.
-    </p>
-    <p>
+    </P>
+    <P>
     After C++98, C++ evolved slowly until, in 2011, C++11 was released, which added plenty of new features and grew the
     standard library much further.
-    </p>
-    <p>
+    </P>
+    <P>
     A draft of the C++20 standard was approved in September 2020, and officially published in December 2020.
-    </p>
-    <h2 name="example_code">Example Code</h2>
-    <p>The below example code only works on C++23 or later and is the "modern" way.</p>
-    <code>
+    </P>
+    <H2 name="example_code">Example Code</H2>
+    <P>The below example code only works on C++23 or later and is the "modern" way.</P>
+    <CODE>
 import std;
 
 int main() {
     std::println("Hello, world!");
 }
-    </code>
-    <p>Though, the older way still works and will continue to work in future versions.</p>
-    <code>
+    </CODE>
+    <P>Though, the older way still works and will continue to work in future versions.</P>
+    <CODE>
 #include [LT]iostream[GT]
 
 int main()
 {
     std::cout [LT][LT] "Hello World!";
 }
-    </code>
-    <h2 name="references">References</h2>
-    <cite>https://en.wikipedia.org/wiki/C++</cite>
-</lpml>
+    </CODE>
+    <H2 name="references">References</H2>
+    <CITE>https://en.wikipedia.org/wiki/C++</CITE>
+</LPML>

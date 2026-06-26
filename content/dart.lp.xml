@@ -1,49 +1,49 @@
-<lpml>
-    <title>Dart</title>
-    <tableofcontents>
+<LPML>
+    <TITLE>Dart</TITLE>
+    <TOC>
         Dart\br\
         History\br\
         Syntax\br\
         References\br\
-    </tableofcontents>
-    <rightbox>
-        <h1>Dart</h1>
-        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dart_programming_language_logo.svg/250px-Dart_programming_language_logo.svg.png</img>
-        <p>Website</p>
-        <link where="https://dart.dev">dart.dev</link>
-        <p>Designed by: Lars Bak and Kasper Lund</p>
-        <p>Developer: Google</p>
-        <p>First appeared: 10 October 2011, 14 years ago</p>
-        <p>License: BSD</p>
-        <p>Filename extensions: .dart</p>
-    </rightbox>
-    <h1 name="dart">Dart</h1>
-    <p>
+    </TOC>
+    <RB>
+        <H1>Dart</H1>
+        <IMG>https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dart_programming_language_logo.svg/250px-Dart_programming_language_logo.svg.png</IMG>
+        <P>Website</P>
+        <LINK where="https://dart.dev">dart.dev</LINK>
+        <P>Designed by: Lars Bak and Kasper Lund</P>
+        <P>Developer: Google</P>
+        <P>First appeared: 10 October 2011, 14 years ago</P>
+        <P>License: BSD</P>
+        <P>Filename extensions: .dart</P>
+    </RB>
+    <H1 name="dart">Dart</H1>
+    <P>
     Dart is an object-oriented, garbage-collected programming language with C-style syntax
     designed by Lars Bak and Kasper Lund. It can compile to machine code, JavaScript, or
     WebAssembly.
-    </p>
-    <h2 name="history">History</h2>
-    <p>
+    </P>
+    <H2 name="history">History</H2>
+    <P>
     On 10 October 2011, Dart was unveiled to the public by its designers Lars Bak and Kasper
     Lund. Dart 1.0 was released on 14 November 2013.
-    </p>
-    <p>
+    </P>
+    <P>
     Dart 2.0 was released on August 2018 with many changes including a type system.
     In November 2019, Dart 2.6 added a new extension, dart2native, extending native
     compilation to Linux, macOS, and Windows.
-    </p>
-    <p>
+    </P>
+    <P>
     Dart 3.0 was released in May 2023, with changes to require null safety. It also added
     features such as records, patterns, and class modifiers. Dart 3.4 added support
     for compilation to WebAssembly.
-    </p>
-    <h2 name="syntax">Syntax</h2>
-    <p>
+    </P>
+    <H2 name="syntax">Syntax</H2>
+    <P>
     Dart uses C-style syntax, and a class-based approach. Dart belongs to the ALGOL language
     family, with members such as C, Java, JavaScript, and others.
-    </p>
-    <code>
+    </P>
+    <CODE>
 void main() {
     print('Hello, world!');
 
@@ -51,7 +51,7 @@ void main() {
         print(i);
     }
 }
-    </code>
-    <h2 name="references">References</h2>
-    <cite>https://en.wikipedia.org/wiki/Dart_(programming_language)</cite>
-</lpml>
+    </CODE>
+    <H2 name="references">References</H2>
+    <CITE>https://en.wikipedia.org/wiki/Dart_(programming_language)</CITE>
+</LPML>

@@ -45,18 +45,18 @@ if args.action == "build" or args.action == "run":
             else:
                 text = ""           
 
-            if elem.tag == "rightbox":
+            if elem.tag == "RB":
                 out += "<div style='float: right;padding:20px;' class='rightbox'>"
                 for child in elem:
-                    if child.tag == "img":
+                    if child.tag == "IMG":
                         out += "<img src=\"" + child.text.strip() + "\">"
-                    elif child.tag == "br":
+                    elif child.tag == "BR":
                         out += "<br>"
-                    elif child.tag == "h1":
+                    elif child.tag == "H1":
                         out += "<h1>" + child.text.strip() + "</h1>"
-                    elif child.tag == "p":
+                    elif child.tag == "P":
                         out += "<p>" + child.text.strip() + "</p>"
-                    elif child.tag == "link":
+                    elif child.tag == "LINK":
                         out += "<a href=\"" + child.attrib["where"] + "\">" + child.text.strip() + "</a>"
                 out += "</div>"
                 continue
@@ -64,53 +64,53 @@ if args.action == "build" or args.action == "run":
             if elem.getparent() is not None and elem.getparent().tag == "html":
                 continue
 
-            if elem.getparent() == None or elem.getparent().tag != "rightbox":
-                if elem.tag == "html" and "html" in elem.attrib:
+            if elem.getparent() == None or elem.getparent().tag != "RB":
+                if elem.tag == "HTML" and "html" in elem.attrib:
                     out += elem.attrib["html"]
-                elif elem.tag == "html":
+                elif elem.tag == "HTML":
                     out += text
-                elif elem.tag == "htmltag":
+                elif elem.tag == "HTMLTG":
                     out += "<" + text + ">"
-                elif elem.tag == "htmltagend":
+                elif elem.tag == "HTMLTGE":
                     out += "</" + text + ">"
-                elif elem.tag == "css":
+                elif elem.tag == "CSS":
                     out += "<style>" + text + "</style>"
                 elif elem.tag == "JS":
                     out += "<script>" + text + "</script>"
-                elif elem.tag == "title":
+                elif elem.tag == "TITLE":
                     out += "<title>" + text + " - Langpedia</title>"
-                elif elem.tag == "tableofcontents":
+                elif elem.tag == "TOC":
                     for i in text.split("\\br\\"):
                         sidebar += "<a href='#" + i.lower().strip().replace("\\sp\\", "").replace("\\br\\", "").replace(" ", "_") + "'>" + i + "</a>"
-                elif elem.tag == "p":
+                elif elem.tag == "P":
                     out += "<p>" + text + "</p>"
-                elif elem.tag == "h1":
+                elif elem.tag == "H1":
                     if "name" in elem.attrib:
                         out += "<h1 id=\"" + elem.attrib["name"] + "\">" + text + "</h1>"
                     else:
                         out += "<h1>" + text + "</h1>"
-                elif elem.tag == "h2":
+                elif elem.tag == "H2":
                     if "name" in elem.attrib:
                         out += "<h2 id=\"" + elem.attrib["name"] + "\">" + text + "</h2>"
                     else:
                         out += "<h2>" + text + "</h2>"
-                elif elem.tag == "h3": 
+                elif elem.tag == "H3": 
                     if "name" in elem.attrib:
                         out += "<h3 id=\"" + elem.attrib["name"] + "\">" + text + "</h3>"
                     else:
                         out += "<h3>" + text + "</h3>"
-                elif elem.tag == "br":
+                elif elem.tag == "BR":
                     out += "<br>"
-                elif elem.tag == "link":
+                elif elem.tag == "LINK":
                     where = elem.attrib["where"]
                     if where.endswith(".lp.xml"):
                         where = where.replace(".lp.xml", ".html")
                     out += "<a href=\"" + where + "\">" + text + "</a>"
-                elif elem.tag == "span":
+                elif elem.tag == "SPAN":
                     out += "<span>" + text + "</span>"
-                elif elem.tag == "i":
+                elif elem.tag == "I":
                     out += "<i>" + text + "</i>"
-                elif elem.tag == "cite":
+                elif elem.tag == "CITE":
                     if platform.system() == "Windows":
                         print("Warning: Citations are not supported on Windows, continuing without.")
 
@@ -126,9 +126,9 @@ if args.action == "build" or args.action == "run":
                             out += "<p>" + text + " (citations not supported on Windows)</p>"
                     else:
                         out += "<p>" + text + " (citation skip option enabled)</p>"
-                elif elem.tag == "code":
+                elif elem.tag == "CODE":
                     out += "<pre><code>" + text.replace("[LT]", "&lt;").replace("[GT]", "&gt;") + "</code></pre>"
-                elif elem.tag == "lpml": pass
+                elif elem.tag == "LPML": pass
                 else:
                     print("Unknown tag:", elem.tag)
 

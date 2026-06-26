@@ -1,39 +1,39 @@
-<lpml>
-    <title>C</title>
-    <tableofcontents>
+<LPML>
+    <TITLE>C</TITLE>
+    <TOC>
         C\br\
         History\br\
         Example Code\br\
         References\br\
-    </tableofcontents>
-    <rightbox>
-        <h1>C</h1>
-        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/C1stEdition.svg/250px-C1stEdition.svg.png</img>
-        <br />
-        <p>Website:</p>
-        <link where="https://www.c-language.org">c-language.org</link>
-    </rightbox>
-    <h1 name="c">C</h1>
-    <p>
+    </TOC>
+    <RB>
+        <H1>C</H1>
+        <IMG>https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/C1stEdition.svg/250px-C1stEdition.svg.png</IMG>
+        <BR />
+        <P>Website:</P>
+        <LINK where="https://www.c-language.org">c-language.org</LINK>
+    </RB>
+    <H1 name="c">C</H1>
+    <P>
     C is a general-purpose programming language created by Ken Thompson and Dennis Ritchie at Bell Labs in the 1970s.
     It was initially used to improve the Unix operating system, but then grew to more use cases, and is still used today.
     C is a complied language, meaning source code is directly converted into machine code to be ran.
-    </p>
-    <h2 name="history">History</h2>
-    <p>
+    </P>
+    <H2 name="history">History</H2>
+    <P>
     In 1972, the language was formally named C, and introduced features like struct, enum, and preprocessor directives.
     In 1973, the UNIX kernel was rewritten in C.
     In 1978, Brian Kernighan and Dennis Ritchie published "The C Programming Language", which served as the de-facto standard until ANSI standardization in 1989.
-    </p>
-    <h2 name="example_code">Example Code</h2>
-    <p>Here is an example of a program written in C. It will show "Hello world!" followed by a newline in a terminal.</p>
-    <code>
+    </P>
+    <H2 name="example_code">Example Code</H2>
+    <P>Here is an example of a program written in C. It will show "Hello world!" followed by a newline in a terminal.</P>
+    <CODE>
 #include [LT]stdio.h[GT]
 
 int main() {
     printf("Hello world\n");
 }
-    </code>
-    <h2 name="references">References</h2>
-    <cite>https://en.wikipedia.org/wiki/C_(programming_language)</cite>
-</lpml>
+    </CODE>
+    <H2 name="references">References</H2>
+    <CITE>https://en.wikipedia.org/wiki/C_(programming_language)</CITE>
+</LPML>

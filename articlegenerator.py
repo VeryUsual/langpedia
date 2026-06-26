@@ -7,29 +7,29 @@ if os.path.exists("content/" + article_name.lower() + ".lp.xml"):
     exit(0)
 
 template = """
-<lpml>
-    <title>{{ARTICLE_NAME}}</title>
-    <tableofcontents>
+<LPML>
+    <TITLE>{{ARTICLE_NAME}}</TITLE>
+    <TOC>
         {{ARTICLE_NAME}}\\br\\
         History\\br\\
         Example Code\\br\\
         References\\br\\
-    </tableofcontents>
-    <rightbox>
-        <h1>{{ARTICLE_NAME}}</h1>
-        <img>!Language logo here!</img>
-        <p>Website:</p>
-        <link where=""></link>
-    </rightbox>
-    <h1 name="{{ARTICLE_NAME_LOWERCASE}}">{{ARTICLE_NAME}}</h1>
-    <p></p>
-    <h2 name="history">History</h2>
-    <p></p>
-    <h2 name="example_code">Example Code</h2>
-    <code></code>
-    <h2 name="references">References</h2>
-    <cite></cite>
-</lpml>
+    </TOC>
+    <RB>
+        <H1>{{ARTICLE_NAME}}</H1>
+        <IMG>!Language logo here!</IMG>
+        <P>Website:</P>
+        <LINK where=""></LINK>
+    </RB>
+    <H1 name="{{ARTICLE_NAME_LOWERCASE}}">{{ARTICLE_NAME}}</H1>
+    <P></P>
+    <H2 name="history">History</H2>
+    <P></P>
+    <H2 name="example_code">Example Code</H2>
+    <CODE></CODE>
+    <H2 name="references">References</H2>
+    <CITE></CITE>
+</LPML>
 """.strip()
 
 replacements = {

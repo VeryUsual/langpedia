@@ -1,61 +1,61 @@
-<lpml>
-    <title>Java</title>
-    <tableofcontents>
+<LPML>
+    <TITLE>Java</TITLE>
+    <TOC>
         Java\br\
         History\br\
         Example Code\br\
         References\br\
-    </tableofcontents>
-    <rightbox>
-        <h1>Java</h1>
-        <img>https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/250px-Java_programming_language_logo.svg.png</img>
-        <br />
-        <p>Website:</p>
-        <link where="http://java.com/">java.com</link>
-        <p>Designer: James Gosling</p>
-        <p>Developer: Oracle Corporation</p>
-        <p>First appeared: May 23, 1995; 31 years ago</p>
-        <p>Latest stable release: Java SE 26, released March 2026</p>
-        <p>Memory management: Garbage collector</p>
-        <p>Filename extensions: .java, .class, .jar, .jmod, .war</p>
-    </rightbox>
-    <h1 name="java">Java</h1>
-    <p>Java is a high-level, general-purpose programming language created by Sun Microsystems, which was later
-    bought out by Oracle Corporation, which continues to update it to this day.</p>
-    <p>Java applications are usually complied to bytecode that can run on any Java Virtual Machine (JVM),
-    meaning that Java programs can run on all platforms that support Java without needing to be recompiled.</p>
-    <p>The syntax of Java is very similar to that of C or C++, although with fewer low-level features.</p>
-    <br />
-    <p>Shortly after its release, Java gained large amounts of popularity, and has stayed a popular
+    </TOC>
+    <RB>
+        <H1>Java</H1>
+        <IMG>https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/250px-Java_programming_language_logo.svg.png</IMG>
+        <BR />
+        <P>Website:</P>
+        <LINK where="http://java.com/">java.com</LINK>
+        <P>Designer: James Gosling</P>
+        <P>Developer: Oracle Corporation</P>
+        <P>First appeared: May 23, 1995; 31 years ago</P>
+        <P>Latest stable release: Java SE 26, released March 2026</P>
+        <P>Memory management: Garbage collector</P>
+        <P>Filename extensions: .java, .class, .jar, .jmod, .war</P>
+    </RB>
+    <H1 name="java">Java</H1>
+    <P>Java is a high-level, general-purpose programming language created by Sun Microsystems, which was later
+    bought out by Oracle Corporation, which continues to update it to this day.</P>
+    <P>Java applications are usually complied to bytecode that can run on any Java Virtual Machine (JVM),
+    meaning that Java programs can run on all platforms that support Java without needing to be recompiled.</P>
+    <P>The syntax of Java is very similar to that of C or C++, although with fewer low-level features.</P>
+    <BR />
+    <P>Shortly after its release, Java gained large amounts of popularity, and has stayed a popular
     language since then. In 2022, according to GitHub, Java was the 3rd most popular programming
-    language.</p>
-    <h2 name="history">History</h2>
-    <p>Java was created in 1991 by James Gosling and others at Sun Microsystems with the initial
+    language.</P>
+    <H2 name="history">History</H2>
+    <P>Java was created in 1991 by James Gosling and others at Sun Microsystems with the initial
     goal of developing software for interactive television, but it was too advanced for the
     cable television industry at the time. The language was originally named Oak but was
-    renamed to Java in 1995 due to trademark conflicts.</p>
-    <p>In 1995, Java 1.0 was released, introducing the Java Virtual Machine (JVM), so developers
+    renamed to Java in 1995 due to trademark conflicts.</P>
+    <P>In 1995, Java 1.0 was released, introducing the Java Virtual Machine (JVM), so developers
     could "Write Once, Run Anywhere". Around 1995-1996, Java was rapidly adopted by web browsers
     like Netscape Navigator, which used Java applets for interactive web content. In 2006, Sun
     Microsystems released Java as open-source software under the GNU General Public License, to
     increase adoption, maintain competitiveness against Microsoft's .NET, and enable community-driven
     development across platforms. In 2010, Oracle Corporation acquired Sun Microsystems, and in
-    the years after, added major features like generics, lambdas, and a module system.</p>
-    <h2 name="example_code">Example Code</h2>
-    <p>The code below is an example of a hello world program in the "traditional" Java syntax:</p>
-    <code>
+    the years after, added major features like generics, lambdas, and a module system.</P>
+    <H2 name="example_code">Example Code</H2>
+    <P>The code below is an example of a hello world program in the "traditional" Java syntax:</P>
+    <CODE>
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }
 }
-    </code>
-    <p>Java 25 introduced a simpler syntax for the main method, as shown below:</p>
-    <code>
+    </CODE>
+    <P>Java 25 introduced a simpler syntax for the main method, as shown below:</P>
+    <CODE>
 void main() {
     IO.println("Hello World!");
 }
-    </code>
-    <h2 name="references">References</h2>
-    <cite>https://en.wikipedia.org/wiki/Java_(programming_language)</cite>
-</lpml>
+    </CODE>
+    <H2 name="references">References</H2>
+    <CITE>https://en.wikipedia.org/wiki/Java_(programming_language)</CITE>
+</LPML>

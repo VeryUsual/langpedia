@@ -1,33 +1,33 @@
-<lpml>
-    <title>Zig</title>
-    <tableofcontents>
+<LPML>
+    <TITLE>Zig</TITLE>
+    <TOC>
         Zig\br\
         History\br\
         Example Code\br\
         References\br\
-    </tableofcontents>
-    <rightbox>
-        <h1>Zig</h1>
-        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Zig_logo_2020.svg/250px-Zig_logo_2020.svg.png</img>
-        <p>Created by: Andrew Kelley</p>
-        <p>First appeared: Feb 2016, 10 years ago</p>
-        <p>Memory management: Manual</p>
-        <p>Implementation language: Zig</p>
-        <p>OS: Linux, macOS, FreeBSD, Windows</p>
-        <p>License: MIT</p>
-        <p>Filename extensions: .zig, .zir, .zigr, .zon</p>
-        <p>Website:</p>
-        <link where="https://ziglang.org">ziglang.org</link>
-    </rightbox>
-    <h1 name="zig">Zig</h1>
-    <p>
+    </TOC>
+    <RB>
+        <H1>Zig</H1>
+        <IMG>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Zig_logo_2020.svg/250px-Zig_logo_2020.svg.png</IMG>
+        <P>Created by: Andrew Kelley</P>
+        <P>First appeared: Feb 2016, 10 years ago</P>
+        <P>Memory management: Manual</P>
+        <P>Implementation language: Zig</P>
+        <P>OS: Linux, macOS, FreeBSD, Windows</P>
+        <P>License: MIT</P>
+        <P>Filename extensions: .zig, .zir, .zigr, .zon</P>
+        <P>Website:</P>
+        <LINK where="https://ziglang.org">ziglang.org</LINK>
+    </RB>
+    <H1 name="zig">Zig</H1>
+    <P>
     Zig is a general-purpose programming language licensed under the MIT license.
     It is designed to be an improvement to C, but with differences in control flow, function calls,
     library imports, variable declaration, and Unicode support. Zig, like C, requires manual memory
     management. Zig was created by Andrew Kelley, and first announced in 2016.
-    </p>
-    <h2 name="history">History</h2>
-    <p>
+    </P>
+    <H2 name="history">History</H2>
+    <P>
     When Andrew Kelley began to develop a DAW (digital audio workstation), he found "Go interoperability with C libraries difficult, and found the garbage
     collector caused audio delays". When he pivoted and tried C++, he found small mistakes quickly led to memory corruption bugs that took weeks to fix.
     After trying Rust, he gave up there also, because he struggled to write code that satisfied Rust's rules, and reportedly spent a month trying to make font
@@ -46,21 +46,21 @@
     includes a revamped std.Io interface for async I/O and simplified package management with dependencies moved to a zig-pkg directory.
     \br\\br\
     On 26 November 2025, Zig development moved from GitHub to Codeberg, and the primary reason being Microsoft's AI policy.
-    </p>
-    <h2 name="example_code">Example Code</h2>
-    <p>The following code sample prints "hello world!" to the screen</p>
-    <link where="https://ziglang.org/learn/samples">Credit: ziglang.org/learn/samples</link>
-    <code>
+    </P>
+    <H2 name="example_code">Example Code</H2>
+    <P>The following code sample prints "hello world!" to the screen</P>
+    <LINK where="https://ziglang.org/learn/samples">Credit: ziglang.org/learn/samples</LINK>
+    <CODE>
 const std = @import("std");
 const Io = std.Io;
 
 pub fn main(init: std.process.Init) !void {
     try Io.File.stdout().writeStreamingAll(init.io, "hello world!\n");
 }
-    </code>
-    <h2 name="references">References</h2>
-    <cite>https://ziglang.org</cite>
-    <cite>https://en.wikipedia.org/wiki/Zig_(programming_language)</cite>
-    <cite>https://corecursive.com/067-zig-with-andrew-kelley</cite>
-    <br />
-</lpml>
+    </CODE>
+    <H2 name="references">References</H2>
+    <CITE>https://ziglang.org</CITE>
+    <CITE>https://en.wikipedia.org/wiki/Zig_(programming_language)</CITE>
+    <CITE>https://corecursive.com/067-zig-with-andrew-kelley</CITE>
+    <BR />
+</LPML>

@@ -1,43 +1,43 @@
-<lpml>
-    <title>Go</title>
-    <tableofcontents>
+<LPML>
+    <TITLE>Go</TITLE>
+    <TOC>
         Go\br\
         History\br\
         Example Code\br\
         References\br\
-    </tableofcontents>
-    <rightbox>
-        <h1>Go</h1>
-        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/250px-Go_Logo_Blue.svg.png</img>
-        <br />
-        <p>Website:</p>
-        <link where="https://go.dev">go.dev</link>
-        <p>Designed by: Robert Griesemer, Rob Pike, Ken Thompson.</p>
-        <p>First appeared: November 10, 2009; 16 years ago</p>\
-        <p>Memory management: Garbage collection</p>
-        <p>Implementation language: Go</p>
-        <p>OS: Linux, Serveral BSDs, Plan 9, macOS, Solaris, Windows</p>
-        <p>License: 3-clause BSD + patent grant</p>
-        <p>Filename extensions: .go</p>
-        <p>Influenced by\br\C, Oberon-2, Limbo, Active Oberon,\br\
+    </TOC>
+    <RB>
+        <H1>Go</H1>
+        <IMG>https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/250px-Go_Logo_Blue.svg.png</IMG>
+        <BR />
+        <P>Website:</P>
+        <LINK where="https://go.dev">go.dev</LINK>
+        <P>Designed by: Robert Griesemer, Rob Pike, Ken Thompson.</P>
+        <P>First appeared: November 10, 2009; 16 years ago</P>\
+        <P>Memory management: Garbage collection</P>
+        <P>Implementation language: Go</P>
+        <P>OS: Linux, Serveral BSDs, Plan 9, macOS, Solaris, Windows</P>
+        <P>License: 3-clause BSD + patent grant</P>
+        <P>Filename extensions: .go</P>
+        <P>Influenced by\br\C, Oberon-2, Limbo, Active Oberon,\br\
         communicating sequential processes, Pascal, Oberon, Smalltalk,\br\
-        Newsqueak, Modula-2, Alef, APL, BCPL, Modula, occam</p>
-        <p>Influenced\br\Crystal, V</p>
-    </rightbox>
-    <h1 name="go">Go</h1>
-    <p>
+        Newsqueak, Modula-2, Alef, APL, BCPL, Modula, occam</P>
+        <P>Influenced\br\Crystal, V</P>
+    </RB>
+    <H1 name="go">Go</H1>
+    <P>
     Go is a high-level complied programming language known for its simple syntax and development efficiency.
     It was created at Google in 2007 by 3 software developers, Robert Griesemer, Rob Pike, and Ken Thompson, and then was publicly announced to the world in November 2009.
     It is inspired by C's syntax, but adds garbage collection, structural typing, and concurrency.
-    </p>
-    <h2 name="history">History</h2>
-    <p>
+    </P>
+    <H2 name="history">History</H2>
+    <P>
     Go was created at Google in 2007 to increase productivity. The designers wanted to address concerns of other languages in use at Google, but keep their useful characteristics.
     \br\\br\
     Go was publicly announced in November 2009, and version 1.0 was released in 2012. Go is used widely at Google, and many other organizations and open-source projects.
-    </p>
-    <h2 name="example_code">Example Code</h2>
-    <code>
+    </P>
+    <H2 name="example_code">Example Code</H2>
+    <CODE>
 package main
 
 import "fmt"
@@ -45,7 +45,7 @@ import "fmt"
 func main() {
     fmt.Println("hello, world!")
 }
-    </code>
-    <h2 name="references">References</h2>
-    <cite>https://en.wikipedia.org/wiki/Go_(programming_language)</cite>
-</lpml>
+    </CODE>
+    <H2 name="references">References</H2>
+    <CITE>https://en.wikipedia.org/wiki/Go_(programming_language)</CITE>
+</LPML>

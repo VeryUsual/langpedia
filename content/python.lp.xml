@@ -1,35 +1,35 @@
-<lpml>
-    <title>Python</title>
-    <tableofcontents>
+<LPML>
+    <TITLE>Python</TITLE>
+    <TOC>
         Python\br\
         History\br\
         Example Code\br\
         References\br\
-    </tableofcontents>
-    <rightbox>
-        <h1>Python</h1>
-        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/250px-Python-logo-notext.svg.png</img>
-        <br />
-        <p>Website:</p>
-        <link where="https://python.org">python.org</link>
-    </rightbox>
-    <h1 name="python">Python</h1>
-    <p>
+    </TOC>
+    <RB>
+        <H1>Python</H1>
+        <IMG>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/250px-Python-logo-notext.svg.png</IMG>
+        <BR />
+        <P>Website:</P>
+        <LINK where="https://python.org">python.org</LINK>
+    </RB>
+    <H1 name="python">Python</H1>
+    <P>
     Python is an open-source interpreted programming language made as a language that is both easy to work on and understand.
     It was made by a Dutch programmer named Guido van Rossum in 1991, who named it off of the television program Monty Python's Flying Circus.
-    </p>
-    <h2 name="history">History</h2>
-    <p>
+    </P>
+    <H2 name="history">History</H2>
+    <P>
     Python was thought up of in the late 1980s by Guido van Rossum, from the Netherlands.
     Python implementation first began in December of 1989.
     It was released originally in 1991 as Python 0.9.0.
     Van Rossum had full responsibility of it, until July 2018, when he announced his "permanent vacation" from responsibilities.
     In January 2019, active Python developers elected a five-member council to lead the project.
-    </p>
-    <h2 name="example_code">Example Code</h2>
-    <p>The following Python program prints "Hello, world!" to the console window.</p>
-    <code>print("Hello, world!")</code>
-    <h2 name="references">References</h2>
-    <cite>https://en.wikipedia.org/wiki/Python_(programming_language)</cite>
-    <cite>https://www.python.org/</cite>
-</lpml>
+    </P>
+    <H2 name="example_code">Example Code</H2>
+    <P>The following Python program prints "Hello, world!" to the console window.</P>
+    <CODE>print("Hello, world!")</CODE>
+    <H2 name="references">References</H2>
+    <CITE>https://en.wikipedia.org/wiki/Python_(programming_language)</CITE>
+    <CITE>https://www.python.org/</CITE>
+</LPML>

@@ -1,6 +1,6 @@
-<lpml>
-    <title>Search</title>
-    <css>
+<LPML>
+    <TITLE>Search</TITLE>
+    <CSS>
     #langpedia {
         animation: growrotate 1.5s ease-in-out infinite alternate;
         color: lightblue;
@@ -18,18 +18,18 @@
     body {
         overflow-x: hidden;
     }
-    </css>
-    <htmltag>div style='text-align: center;'</htmltag>
-        <h1 name="langpedia">Search Langpedia</h1>
-        <br />
-        <i>Search Langpedia's {{totalarticlecount}} articles:</i>
-        <br /><br />
-        <htmltag>input type='text' id='searchinput'</htmltag>
-    <htmltagend>div</htmltagend>
-    <htmltag>div id='results'</htmltag>
-    <htmltagend>div</htmltagend>
-    <br />
-    <br />
+    </CSS>
+    <HTMLTG>div style='text-align: center;'</HTMLTG>
+        <H1 name="langpedia">Search Langpedia</H1>
+        <BR />
+        <I>Search Langpedia's {{totalarticlecount}} articles:</I>
+        <BR /><BR />
+        <HTMLTG>input type='text' id='searchinput'</HTMLTG>
+    <HTMLTGE>div</HTMLTGE>
+    <HTMLTG>div id='results'</HTMLTG>
+    <HTMLTGE>div</HTMLTGE>
+    <BR />
+    <BR />
     <JS>
 
     const articles = {{ARTICLES_ARRAY}};
@@ -50,4 +50,4 @@
     });
 
     </JS>
-</lpml>
+</LPML>

@@ -1,66 +1,66 @@
-<lpml>
-    <title>TypeScript</title>
-    <tableofcontents>
+<LPML>
+    <TITLE>TypeScript</TITLE>
+    <TOC>
         TypeScript\br\
         History\br\
         Syntax\br\
         References\br\
-    </tableofcontents>
-    <rightbox>
-        <h1>TypeScript</h1>
-        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/250px-Typescript.svg.png</img>
-        <p>Website:</p>
-        <link where="https://www.typescriptlang.org">www.typescriptlang.org</link>
-        <p>Designed by: Microsoft, Anders Hejlsberg, Luke Hoban</p>
-        <p>Developer: Microsoft</p>
-        <p>First appeared: October 2012, 13 years ago</p>
-        <p>License: Apache 2.0</p>
-        <p>Filename extensions: .ts, .tsx, .mts, .cts</p>
-    </rightbox>
-    <h1 name="typescript">TypeScript</h1>
-    <p>
+    </TOC>
+    <RB>
+        <H1>TypeScript</H1>
+        <IMG>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/250px-Typescript.svg.png</IMG>
+        <P>Website:</P>
+        <LINK where="https://www.typescriptlang.org">www.typescriptlang.org</LINK>
+        <P>Designed by: Microsoft, Anders Hejlsberg, Luke Hoban</P>
+        <P>Developer: Microsoft</P>
+        <P>First appeared: October 2012, 13 years ago</P>
+        <P>License: Apache 2.0</P>
+        <P>Filename extensions: .ts, .tsx, .mts, .cts</P>
+    </RB>
+    <H1 name="typescript">TypeScript</H1>
+    <P>
     TypeScript is a high-level programming language that adds static typing to JavaScript, which it transpiles to.
     It is developed by Microsoft under the Apache License 2.0.
-    </p>
-    <p>
+    </P>
+    <P>
     TypeScript can be used to develop both client-side and server-side JavaScript applications.
-    </p>
-    <h2 name="history">History</h2>
-    <p>
+    </P>
+    <H2 name="history">History</H2>
+    <P>
     TypeScript was officially released by Microsoft in October 2012, as version 0.8. TypeScript 0.9,
     released in 2013, added support for generics. TypeScript 1.0 was released in 2014, adding IDE integration and
     production stability, and also opened the project to external pull requests. In July 2014, the codebase was moved
     from CodePlex to GitHub.
-    </p>
-    <p>
+    </P>
+    <P>
     On 22 September 2016, TypeScript 2.0 was released, added many features like enforcing null safety.
-    </p>
-    <p>
+    </P>
+    <P>
     On 30 July 2018, TypeScript 3.0 was released, which added things like tuples, spread expressions, and generic
     rest parameters.
-    </p>
-    <p>
+    </P>
+    <P>
     On 20 August 2020, TypeScript 4.0 was released, adding features like Custom JSX Factories and
     Variadic Tuple Types, although no breaking changes were introduced in this version.
-    </p>
-    <p>
+    </P>
+    <P>
     On 16 March 2023, TypeScript 5.0 was released, adding support for decorators.
-    </p>
-    <p>
+    </P>
+    <P>
     On March 11, 2025, Anders Hejlsberg announced that the TypeScript team was working on a port
     of the TypeScript compiler written in Go to be released as TypeScript 7.0.
-    </p>
-    <p>
+    </P>
+    <P>
     On December 2, 2025, the TypeScript blog announced that TypeScript 6.0 would be the last release
     written in TypeScript itself, and TypeScript 7.0 would be the first Go-based release.
-    </p>
-    <h2 name="syntax">Syntax</h2>
-    <p>
+    </P>
+    <H2 name="syntax">Syntax</H2>
+    <P>
     TypeScript's syntax is a superset of JavaScript that adds static typing and a changed syntax
     for better tooling and error detection.
-    </p>
-    <h3>Syntax Elements</h3>
-    <p>
+    </P>
+    <H3>Syntax Elements</H3>
+    <P>
     Type Annotations: Variables, parameters, and return values can be explicitly typed using
     colons.
     \br\\br\
@@ -72,11 +72,11 @@
     Arrays and Tuples: Arrays are typed using type[] or Array[LT]type[GT].
     \br\\br\
     Classes: Supports OOP features like constructors, inheritance, and access modifiers.
-    </p>
-    <p>
+    </P>
+    <P>
     One major difference from JavaScript is that TypeScript uses static checking, checking
     errors at compile-time, not runtime.
-    </p>
-    <h2 name="references">References</h2>
-    <cite>https://en.wikipedia.org/wiki/TypeScript</cite>
-</lpml>
+    </P>
+    <H2 name="references">References</H2>
+    <CITE>https://en.wikipedia.org/wiki/TypeScript</CITE>
+</LPML>

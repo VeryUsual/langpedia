@@ -1,117 +1,117 @@
-<lpml>
-    <title>Kotlin</title>
-    <tableofcontents>
+<LPML>
+    <TITLE>Kotlin</TITLE>
+    <TOC>
         Kotlin\br\
         History\br\
         Syntax\br\
         References\br\
-    </tableofcontents>
-    <rightbox>
-        <h1>Kotlin</h1>
-        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kotlin_logo_%282025%29.svg/250px-Kotlin_logo_%282025%29.svg.png</img>
-        <br />
-        <p>Website:</p>
-        <link where="https://kotlinlang.org">Kotlin</link>
-        <p>Designed by: Andrey Breslav, JetBrains</p>
-        <p>Developer: JetBrains</p>
-        <p>First appeared: July 2011, 14 years ago</p>
-        <p>Platforms: Android, JVM, iOS, iPadOS, tvOS, watchOS, macOS, Linux, Windows, JavaScript, WebAssembly, LLVM</p>
-        <p>License: Apache 2.0</p>
-        <p>Filename extensions: .kt, .kts, .kexe, .klib</p>
-    </rightbox>
-    <h1 name="kotlin">Kotlin</h1>
-    <p>
+    </TOC>
+    <RB>
+        <H1>Kotlin</H1>
+        <IMG>https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kotlin_logo_%282025%29.svg/250px-Kotlin_logo_%282025%29.svg.png</IMG>
+        <BR />
+        <P>Website:</P>
+        <LINK where="https://kotlinlang.org">Kotlin</LINK>
+        <P>Designed by: Andrey Breslav, JetBrains</P>
+        <P>Developer: JetBrains</P>
+        <P>First appeared: July 2011, 14 years ago</P>
+        <P>Platforms: Android, JVM, iOS, iPadOS, tvOS, watchOS, macOS, Linux, Windows, JavaScript, WebAssembly, LLVM</P>
+        <P>License: Apache 2.0</P>
+        <P>Filename extensions: .kt, .kts, .kexe, .klib</P>
+    </RB>
+    <H1 name="kotlin">Kotlin</H1>
+    <P>
     Kotlin is a cross-platform, statically-typed, high-level programming language. Kotlin is designed
     to be fully compatiable with Java. Kotlin primarily runs on the JVM, although also compiles to
     JavaScript or native code via LLVM.
-    </p>
-    <p>
+    </P>
+    <P>
     On May 7, 2019, Google announced Kotlin was its preferred langauge for Android app developers.
     Since the release of Android Studio 3.0, Kotlin has been included as an alternative to the
     standard Java compiler.
-    </p>
-    <h2 name="history">History</h2>
-    <h3>Name</h3>
-    <p>
+    </P>
+    <H2 name="history">History</H2>
+    <H3>Name</H3>
+    <P>
     The name comes from Kotlin Island, a Russian island in the Gulf of Finland, near St. Petersburg.
     The team decided to name it after an island, in immitation of the Java programming language, which
     shares the name of the Indonesian island of Java.
-    </p>
-    <h3>Development</h3>
-    <p>
+    </P>
+    <H3>Development</H3>
+    <P>
     In July 2011, JetBrains unveiled Project Kotlin, a new JVM language they'd been working on
     for over a year. JetBrains lead Dmitry Jemerov said that most languages lacked the features
     they were looking for, except for Scala, although, it had slow compiling time.
-    </p>
-    <p>
+    </P>
+    <P>
     In February 2012, JetBrains open-sourced the project until the Apache 2.0 license.
-    </p>
-    <p>
+    </P>
+    <P>
     Kotlin 1.0 was released on February 15, 2016, the first officially stable release, which JetBrains
     has promised long-term backwards compatibility starting with this version.
-    </p>
-    <h2 name="syntax">Syntax</h2>
-    <h3>Main entry point</h3>
-    <p>
+    </P>
+    <H2 name="syntax">Syntax</H2>
+    <H3>Main entry point</H3>
+    <P>
     Like in many other programming languages, the entry point to a Kotlin program is a function
     named main, which may be passed an array containing command line arguments. This is optional
     since Kotlin 1.3.
-    </p>
-    <code>
+    </P>
+    <CODE>
 fun main(args: Array[LT]String[GT]) {
     for (arg in args) {
         println(arg)
     }
 }
-    </code>
-    <h3>Visibility modifiers</h3>
-    <p>
+    </CODE>
+    <H3>Visibility modifiers</H3>
+    <P>
     Kotlin provides the following keywords to restrict visibility for top-level declarations and
     for class members: public, internal, protected, and private.
-    </p>
-    <p>
+    </P>
+    <P>
     When applied to a class member:\br\
     Public - Visibility: Everywhere\br\
     Internal - Visibility: Within a module\br\
     Protected - Visibility: Within subclasses\br\
     Private - Visibility: Within a class\br\
-    </p>
-    <p>
+    </P>
+    <P>
     When applied to a top-level declaration:\br\
     Public - Visibility: Everywhere\br\
     Internal - Visibility: Within a module\br\
     Private - Visibility: Within a file\br\
-    </p>
-    <h3>Null safety</h3>
-    <p>
+    </P>
+    <H3>Null safety</H3>
+    <P>
     Kotlin distinguishes between nullable and non-nullable data types. All nullable objects must
     be declared with a postfix of ? after the type name.
-    </p>
-    <p>
+    </P>
+    <P>
     For these variables, a null-check must be performed before accessing the value by using:
     \br\\br\
     - ?. (the safe navigation operator). If the object is null, the method won't be called, and
     the expression will be null. Example:
-    </p>
-    <code>
+    </P>
+    <CODE>
 foo()?.bar()?.baz()
-    </code>
-    <p>
+    </CODE>
+    <P>
     - ?: (the null coalescing operator) returns the first operand, if non-null, otherwise, returns
     the second operand.
-    </p>
-    <code>
+    </P>
+    <CODE>
 val name: String = maybe ?: "stranger"
-    </code>
-    <h3>Lambdas</h3>
-    <p>
+    </CODE>
+    <H3>Lambdas</H3>
+    <P>
     Kotlin supports lambdas, they are declared using braces. If it takes parameters, they are
     declared within the braces and followed by the -[GT] operator.
-    </p>
-    <code>
+    </P>
+    <CODE>
 val l = { c : Any? -[GT] println(c) }
 val l2 = { print("no parameters") }
-    </code>
-    <h2 name="references">References</h2>
-    <cite>https://en.wikipedia.org/wiki/Kotlin</cite>
-</lpml>
+    </CODE>
+    <H2 name="references">References</H2>
+    <CITE>https://en.wikipedia.org/wiki/Kotlin</CITE>
+</LPML>

@@ -1,46 +1,46 @@
-<lpml>
-    <title>Scala</title>
-    <tableofcontents>
+<LPML>
+    <TITLE>Scala</TITLE>
+    <TOC>
         Scala\br\
         History\br\
         Example Code\br\
         References\br\
-    </tableofcontents>
-    <rightbox>
-        <h1>Scala</h1>
-        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Scala-full-color.svg/500px-Scala-full-color.svg.png</img>
-        <p>Website:</p>
-        <link where="http://www.scala-lang.org">www.scala-lang.org</link>
-        <p>Family: JVM-hosted</p>
-        <p>Designed by: Martin Odersky</p>
-        <p>Developer: École Polytechnique Fédérale de Lausanne: Programming Methods Laboratory</p>
-        <p>First appeared: 20 January 2004; 22 years ago</p>
-        <p>Implementation language: Scala</p>
-        <p>Platforms: JVM, JavaScript, LLVM</p>
-        <p>License: Apache 2.0</p>
-        <p>Filename extensions: .scala, .sc</p>
-    </rightbox>
-    <h1 name="scala">Scala</h1>
-    <p>
+    </TOC>
+    <RB>
+        <H1>Scala</H1>
+        <IMG>https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Scala-full-color.svg/500px-Scala-full-color.svg.png</IMG>
+        <P>Website:</P>
+        <LINK where="http://www.scala-lang.org">www.scala-lang.org</LINK>
+        <P>Family: JVM-hosted</P>
+        <P>Designed by: Martin Odersky</P>
+        <P>Developer: École Polytechnique Fédérale de Lausanne: Programming Methods Laboratory</P>
+        <P>First appeared: 20 January 2004; 22 years ago</P>
+        <P>Implementation language: Scala</P>
+        <P>Platforms: JVM, JavaScript, LLVM</P>
+        <P>License: Apache 2.0</P>
+        <P>Filename extensions: .scala, .sc</P>
+    </RB>
+    <H1 name="scala">Scala</H1>
+    <P>
     Scala is a statically-typed, high-level, general-purpose programming language designed to be
     concise and fix Java's problems.
-    </p>
-    <p>
+    </P>
+    <P>
     Scala code can run on a JVM, transpiled to JavaScript to run on the Web, or compiled directly
     using Clang.
-    </p>
-    <h2 name="history">History</h2>
-    <p>
+    </P>
+    <H2 name="history">History</H2>
+    <P>
     The design of Scala started in 2001 at a public research university, École Polytechnique
     Fédérale de Lausanne, in Lausanne, Switzerland by Martin Odersky. After an internal
     release in 2003, Scala was released publicly in early 2004. A second version was
     released in March 2006.
-    </p>
-    <h2 name="example_code">Example Code</h2>
-    <p>The following code prints hello world to the terminal window</p>
-    <code>
+    </P>
+    <H2 name="example_code">Example Code</H2>
+    <P>The following code prints hello world to the terminal window</P>
+    <CODE>
 @main def main() = println("Hello, world!")
-    </code>
-    <h2 name="references">References</h2>
-    <cite>https://en.wikipedia.org/wiki/Scala_(programming_language)</cite>
-</lpml>
+    </CODE>
+    <H2 name="references">References</H2>
+    <CITE>https://en.wikipedia.org/wiki/Scala_(programming_language)</CITE>
+</LPML>

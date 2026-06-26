@@ -1,136 +1,136 @@
-<lpml>
-    <title>Ruby</title>
-    <tableofcontents>
+<LPML>
+    <TITLE>Ruby</TITLE>
+    <TOC>
         Ruby\br\
         History\br\
         Syntax\br\
         References\br\
-    </tableofcontents>
-    <rightbox>
-        <h1>Ruby</h1>
-        <img>https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/250px-Ruby_logo.svg.png</img>
-        <p>Website:</p>
-        <link where="https://www.ruby-lang.org">www.ruby-lang.org</link>
-        <p>Designed by: Yukihiro Matsumoto</p>
-        <p>Developer: Yukihiro Matsumoto and open source contributors</p>
-        <p>First appeared: 1995, 31 years ago</p>
-        <p>Implementation language: C</p>
-        <p>License: Ruby License</p>
-        <p>OS: Linux, macOS, freeBSD, other Unix-like systems, Windows</p>
-        <p>Filename extensions: .rb, .ru</p>
-    </rightbox>
-    <h1 name="ruby">Ruby</h1>
-    <p>
+    </TOC>
+    <RB>
+        <H1>Ruby</H1>
+        <IMG>https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/250px-Ruby_logo.svg.png</IMG>
+        <P>Website:</P>
+        <LINK where="https://www.ruby-lang.org">www.ruby-lang.org</LINK>
+        <P>Designed by: Yukihiro Matsumoto</P>
+        <P>Developer: Yukihiro Matsumoto and open source contributors</P>
+        <P>First appeared: 1995, 31 years ago</P>
+        <P>Implementation language: C</P>
+        <P>License: Ruby License</P>
+        <P>OS: Linux, macOS, freeBSD, other Unix-like systems, Windows</P>
+        <P>Filename extensions: .rb, .ru</P>
+    </RB>
+    <H1 name="ruby">Ruby</H1>
+    <P>
     Ruby is an interpreted, high-level, dynamically-typed, general-purpose programming language
     designed to be productive and simple. In Ruby, everything is an object. It's interpreter
     uses just-in-time compilation and garbage collection.
-    </p>
-    <h2 name="history">History</h2>
-    <h3>Early concept</h3>
-    <p>
+    </P>
+    <H2 name="history">History</H2>
+    <H3>Early concept</H3>
+    <P>
     Ruby was conceived in 1993 by Yukihiro Matsumoto. He wanted the design of it to resemble
     a simple Lisp language at its core, with an object system like Smalltalk, blocks inspired
     by higher-order functions, and a practical utility like Perl.
-    </p>
-    <h3>Early releases</h3>
-    <p>
+    </P>
+    <H3>Early releases</H3>
+    <P>
     The first public release of Ruby was announced on Japanese newsgroups on 21 December 1995.
     After that, three more versions of Ruby were released in just two days. These versions
     included features like object-oriented design, classes with inheritance, mixins, iterators,
     closures, exception handling, and garbage collection.
-    </p>
-    <p>
+    </P>
+    <P>
     In 1997, Matsumoto was hired by netlab.jp to work on Ruby as a full-time developer.
-    </p>
-    <p>
+    </P>
+    <P>
     In 1999, the first English-speaking mailing list about Ruby began.
-    </p>
-    <p>
+    </P>
+    <P>
     By 2000, Ruby was more popular than Python in Japan. In September 2000, the first English
     language book about Ruby was printed.
-    </p>
-    <h3>Ruby 1.8 and 1.9</h3>
-    <p>
+    </P>
+    <H3>Ruby 1.8 and 1.9</H3>
+    <P>
     Ruby 1.8 added features such as the allocate method, allowing creating object instances without
     invoking contructors and to_str method, which allows "duck typing" which allows objects to be
     implicitly cast to strings. It was stable for a long time, then deprecated in June 2013.
-    </p>
-    <p>
+    </P>
+    <P>
     Around 2005, interest in Ruby surged due to Ruby on Rails, a popular web framework written
     in Ruby.
-    </p>
-    <p>
+    </P>
+    <P>
     On 31 October 2011, when releasing Ruby 1.9.3, Ruby switched from being dual-licensed under
     the Ruby License and the GPL to being dual-licensed under the Ruby License and the two-clause
     BSD License.
-    </p>
-    <h3>Ruby 2</h3>
-    <p>
+    </P>
+    <H3>Ruby 2</H3>
+    <P>
     Ruby 2.0 was designed to be fully backward-compatible with Ruby 1.9.3. It introduced keyword
     arguments, lazy enumerators, a new regex engine, symbol list syntax, core class updates,
     among others.
-    </p>
-    <p>
+    </P>
+    <P>
     Ruby 2.2.0 included performance improvements, bugfixes, and library updates. Ruby 2.2.0
     also introduced an incremental garbage collector.
-    </p>
-    <p>
+    </P>
+    <P>
     Ruby 2.3.0 included many performance improvements, updates, and bugfixes including changes
     to Proc#call, Socket and IO use of exception keywords, Thread#name handling, default passive
     Net::FTP connections, and Rake being removed from stdlib.
-    </p>
-    <p>
+    </P>
+    <P>
     Ruby 2.4.0 included performance improvements to hash tables, Array#max, Array#min, and
     instance variable access.
-    </p>
-    <p>
+    </P>
+    <P>
     Ruby 2.5.0 included rescue and ensure statements automatically use a surrounding do-end
     block, method-chaining, support for branch coverage and method coverage measurement,
     and easier Hash transformations.
-    </p>
-    <p>
+    </P>
+    <P>
     Ruby 2.6.0 added an experimental just-in-time compiler.
-    </p>
-    <p>
+    </P>
+    <P>
     Ruby 2.7.0 included pattern matching, REPL improvements, a compaction GC, and seperation
     of positional and keyword arguments.
-    </p>
-    <h3>Ruby 3</h3>
-    <p>
+    </P>
+    <H3>Ruby 3</H3>
+    <P>
     Ruby 3.0.0 was released on Christmas Day in 2020. It was known as Ruby 3x3, which means
     programs would run 3 times faster on Ruby 3 than Ruby 2. To achieve this, Ruby 3 added
     MJIT, a just-in-time compiler to make programs faster. It also greatly improved
     concurrency.
-    </p>
-    <p>
+    </P>
+    <P>
     Ruby 3.1 was released on 25 December 2021, and added YJIT, a new just-in-time compiler
     developed by Shopify, and added a new debugger.
-    </p>
-    <p>
+    </P>
+    <P>
     Ruby 3.2 was released on 25 December 2022, and added support for being run in WebAssembly,
     and improved regular expressions.
-    </p>
-    <p>
+    </P>
+    <P>
     Ruby 3.3 was released on 25 December 2023, and added things like the Prism parser for portable
     and maintainable parsing, the pure-Ruby JIT compiler RJIT, and major performance boosts  to
     YJIT.
-    </p>
-    <p>
+    </P>
+    <P>
     Ruby 3.4 was released 25 December 2024, and added it block parameter reference, made Prism the
     default parser, improved YJIT, and added a modular garbage collector.
-    </p>
-    <h3>Ruby 4</h3>
-    <p>
+    </P>
+    <H3>Ruby 4</H3>
+    <P>
     Ruby 4 was released 25 December 2025, and added ZJIT, a JIT made in Rust, and "Ruby Box", a
     feature to provide seperation about definitions. The version number was bumped to 4 to
     celebrate Ruby's 30 birthday.
-    </p>
-    <h2 name="syntax">Syntax</h2>
-    <p>
+    </P>
+    <H2 name="syntax">Syntax</H2>
+    <P>
     The syntax of Ruby is close to Perl and Python.
-    </p>
-    <h3>Strings</h3>
-    <code>
+    </P>
+    <H3>Strings</H3>
+    <CODE>
 s = "a string"
 s = %Q{a string}
 s = %{a string}
@@ -141,34 +141,34 @@ BLOCK
 
 pie = 3.1415926535
 "pi is #{pie}"
-    </code>
-    <h3>Collections</h3>
-    <p>Arrays</p>
-    <code>
+    </CODE>
+    <H3>Collections</H3>
+    <P>Arrays</P>
+    <CODE>
 a = [3, 'hi', 14.5, 1, 2, [6, 15]]
 a[2]
 a.[](2)
 a.reverse
 a.flatten.rotate
-    </code>
-    <p>Hashes</p>
-    <code>
+    </CODE>
+    <P>Hashes</P>
+    <CODE>
 hash = Hash.new
 hash = { water: 'wet', fire: 'hot' }
 hash.delete :water
 hash.delete_if {|key,value| value == 'hot'}
-    </code>
-    <h3>Control structures</h3>
-    <p>If statements:</p>
-    <code>
+    </CODE>
+    <H3>Control structures</H3>
+    <P>If statements:</P>
+    <CODE>
 if rand(100).even?
     puts "even"
 else
     puts "odd"
 end
-    </code>
-    <h3>Classes</h3>
-    <code>
+    </CODE>
+    <H3>Classes</H3>
+    <CODE>
 class Person
   attr_reader :name, :age
   def initialize(name, age)
@@ -189,14 +189,14 @@ group = [
 ]
 
 puts group.sort.reverse
-    </code>
-    <h3>Exceptions</h3>
-    <code>
+    </CODE>
+    <H3>Exceptions</H3>
+    <CODE>
 raise
 raise "Error"
 raise ArgumentError, "Illegal arguments"
 raise ArgumentError.new("Illegal arguments")
-    </code>
-    <h2 name="references">References</h2>
-    <cite>https://en.wikipedia.org/wiki/Ruby_(programming_language)</cite>
-</lpml>
+    </CODE>
+    <H2 name="references">References</H2>
+    <CITE>https://en.wikipedia.org/wiki/Ruby_(programming_language)</CITE>
+</LPML>
