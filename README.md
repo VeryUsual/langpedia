@@ -17,6 +17,8 @@ pip install -r requirements.txt
 python3 ssg.py run
 ```
 
+Then, visit [127.0.0.1:8000](http://127.0.0.1:8000) in your browser of choice.
+
 ## License
 
 The content on this site is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The static site generator is licensed under the GNU General Public License Version 3.
