@@ -10,7 +10,8 @@ Access the site [here](https://veryusual.github.io/langpedia/).
 
 ```
 git clone https://github.com/VeryUsual/langpedia
-python -m venv .venv
+cd langpedia
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 python3 ssg.py run
