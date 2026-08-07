@@ -3,8 +3,8 @@
 An encyclopedia of programming languages, built using a custom static site generator with a custom XML dialect. It provides history and explanations on various programming languages, as other sites like Wikipedia display them in a confusing, complicated fashion. Langpedia, on the other hand, provides information on programming languages, and makes it very easy to go through and look at information of programming languages.
 
 <p float="middle">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/e85cd4d9-b21b-4ac8-b37d-9bf0acbf2245" />
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/2edf76b9-6ee0-4b04-8192-f6d95b47ff92" />
+  <img width="400" alt="image" src="https://github.com/user-attachments/assets/e85cd4d9-b21b-4ac8-b37d-9bf0acbf2245" />
+  <img width="400" alt="image" src="https://github.com/user-attachments/assets/2edf76b9-6ee0-4b04-8192-f6d95b47ff92" />
 </p>
 
 ## Usage
